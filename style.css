@@ -1,0 +1,417 @@
+body{
+    font-family: 'Muli', sans-serif;
+    background-color: white;
+    margin: 0px;
+  
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    height: 80px;
+    margin: 0px 0px 0px 0px;
+    position: sticky;
+    position: fixed;
+    top: -1px;
+    background-color: black;
+}
+.title{
+    margin-left: 60px;
+}
+
+.title a{
+    text-decoration: none;
+    color:white;
+    font-weight: 900;
+} 
+.navbar{
+    display: flex;
+    margin-left: 550px;
+}
+.navbar a{
+    padding: 25px 10px 0px 10px;
+    text-decoration: none;
+    color: white;
+}
+/* header */
+header{
+    background-image: url("Images/wallpaper2.jpg");
+    background-size: 1264px 620px;
+    height: 620px;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    margin: 80px 20px 0px 20px;
+}
+header h1{
+padding-top: 210px;
+font-size: 50px;
+margin-top: 0px;
+}
+header i{
+    font-size: 30px;
+    font-weight: 500;
+}
+header button:hover{
+    background-color: #23a5f6;
+}
+header button{
+    margin-top: 70px;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    background-color: lightskyblue;
+    border-radius: 5%;
+    border: 0px;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 60px 0px 60px;
+    height: 550px;
+
+}
+.fas{
+    color: black;
+}
+.flight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.car{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.hotel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.things{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+main p{
+    font-size: 20px;
+    font-weight: 300;
+}
+main button:hover{
+    background-color: #23a5f6;
+
+}
+main button{
+    margin-top: 20px;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    background-color: lightskyblue;
+    border-radius: 5%;
+    border: 0px;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+}
+/* footer */
+
+footer{
+    display: flex;
+    background-color:black;
+    height: 200px;
+    color: white;
+    padding-bottom: 0px;
+
+}
+.testi{
+    width: 75%;
+}
+.testi h6{
+    color: white;
+    position: relative;
+    left: 550px;
+    top: 150px;
+    margin: 0px;
+    padding: 0px;
+}
+.icon{
+    width: 25%;
+}
+#icon a{
+    position: relative;
+    top: 100px;
+    left: 100px;
+    font-size: 25px;
+    padding:25px 10px 25px 10px;
+    text-decoration: none;
+}
+/* contact */
+.contact h1{
+    position: relative;
+    top: 80px;
+    left: 600px;
+}
+.contact{
+    margin-bottom: 0px;
+    height: 600px
+}
+
+.form{
+    display: flex;
+    height: 540px;
+    justify-content: center;
+}
+.box{
+    width: 50%;
+    padding-top: 130px;
+    margin-right: 150px;
+}
+.box input{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 15px;
+    outline: none;
+}
+.box textarea{
+    width: 300px;
+    height: 100px;
+    outline: none;
+}
+.box button{
+    position: relative;
+    left: 110px;
+    margin-top: 20px;
+    padding: 10px 15px 10px 15px;
+    background-color: lightskyblue;
+    border-radius: 5%;
+    border: 0px;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+}
+
+#map{
+    width: 350px;
+    position: relative;
+    height: 350px;
+    left: 750px;
+    bottom: 410px;
+    border: 1px solid black;
+  }
+/* about */
+
+  .about{
+    background-image: url("Images/wallpaper3.jpeg");
+    background-size: 1264px 620px;
+    height: 620px;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    margin: 80px 20px 0px 20px;
+}
+.about h1{
+    padding-top: 300px;
+    font-size: 50px;
+    margin-top: 0px;
+    }
+
+.article{
+    height: 300px;
+}
+.article p{
+    text-align: center;
+    padding: 50px 200px 20px 200px;
+    font-size: 24px;
+}
+.devs{
+    display: flex;
+    flex-direction: column;
+}
+.devs img{
+    border-radius: 50%;
+    width: 250px;
+}
+.dev p{
+    text-align: center;
+}
+.dev1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 350px 0px 350px;
+}
+.dev2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 350px 0px 350px;
+}
+.dev3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 350px 0px 350px;
+}
+/* testimonials */
+.testimonials{
+    background-color:rgb(245,245,245);
+    display: flex;
+    flex-direction: column;
+    padding: 60px 100px 60px 100px;
+}
+.test1{
+    display: flex;
+    padding-bottom: 60px;
+
+}
+.test2{
+    display: flex;
+}
+.person{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+.person h1{
+    color: darkkhaki;
+} 
+.person i{
+    font-size: 20px;
+    text-align: center;
+
+}
+/* service */
+#service{
+    height: 600px;
+    padding-top: 100px;
+    background-image: url("Images/wallpaper5.jpg");
+    background-size: 1280px 700px;
+    background-repeat: no-repeat;
+}
+.transparent_box{
+    margin-left: 50px;
+    background-color:  rgb(0, 0, 0,0.5);
+    height: 500px;
+    width: 1000px;
+}
+.buttons{
+    padding: 50px 0px 0px 50px;
+}
+.buttons button{
+    padding: 10px 15px 10px 15px;
+    background-color: lightskyblue;
+    border-radius: 5%;
+    border: 0px;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+}
+.buttons button:hover{
+    background-color: #23a5f6;
+}
+
+#label{
+    height: 300px;
+    color: white;
+    font-size: 20px;
+}
+#label input{
+    height: 30px;
+    font-size: 20px;
+    margin: 25px;
+    border: 0px;
+    outline: none;
+}
+.label_button button:hover{
+    background-color: #23a5f6;
+}
+
+.label_button{
+    margin-top: 0px;
+    margin-left: 50px;
+}
+.label_button button{
+    padding: 10px 15px 10px 15px;
+    background-color: lightskyblue;
+    border-radius: 5%;
+    border: 0px;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+}
+
+/* results */
+#results{
+    height: 600px;
+    padding-top: 100px;
+    background-size: 1280px 700px;
+    background-repeat: no-repeat;
+}
+
+/* service bundle */
+#bundle{
+    height: 600px;
+    padding-top: 100px;
+    background-image: url("Images/wallpaper6.jpg");
+    background-size: 1280px 700px;
+    background-repeat: no-repeat;
+}
+
+
+.buttons_bundle{
+    margin: 10px 0px 0px 80px;
+}
+
+.buttons_bundle button{
+    padding: 10px 15px 10px 15px;
+    background-color: black;
+    border-radius: 5%;
+    border: 0px;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    color: white;
+}
+.buttons_bundle button:hover{
+    background-color: #23a5f6;
+}
+
+.buttons_bundle i{
+    color: white;
+}
+
+.transparent_box1{
+    margin-left: 50px;
+    background-color:  rgb(0, 0, 0,0.5);
+    height: 525px;
+    width: 1000px;
+}
+.label_button1{
+    position: relative;
+    left: 50px;
+    bottom: 60px;
+}
+
+.label_button1 button{
+    padding: 10px 15px 10px 15px;
+    background-color: lightskyblue;
+    border-radius: 5%;
+    border: 0px;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+}
+.label_button1 button:hover{
+    background-color: #23a5f6;
+}
+
+
+
+
