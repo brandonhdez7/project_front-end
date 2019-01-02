@@ -2,16 +2,15 @@ body{
     font-family: 'Muli', sans-serif;
     background-color: white;
     margin: 0px;
-  
 }
 
 nav{
-    width: 100%;
     display: flex;
     height: 80px;
     margin: 0px 0px 0px 0px;
-    position: sticky;
+    position: -webkit-sticky;
     position: fixed;
+    width: 100%;
     top: -1px;
     background-color: black;
 }
@@ -33,10 +32,9 @@ nav{
     text-decoration: none;
     color: white;
 }
-/* header */
 header{
     background-image: url("Images/wallpaper2.jpg");
-    background-size: 100% 620px;
+    background-size: 1264px 620px;
     height: 620px;
     background-repeat: no-repeat;
     text-align: center;
@@ -51,9 +49,6 @@ margin-top: 0px;
 header i{
     font-size: 30px;
     font-weight: 500;
-}
-header button:hover{
-    background-color: #23a5f6;
 }
 header button{
     margin-top: 70px;
@@ -103,10 +98,6 @@ main{
 main p{
     font-size: 20px;
     font-weight: 300;
-}
-main button:hover{
-    background-color: #23a5f6;
-
 }
 main button{
     margin-top: 20px;
@@ -208,7 +199,7 @@ footer{
 
   .about{
     background-image: url("Images/wallpaper3.jpeg");
-    background-size: 100% 620px;
+    background-size: 1264px 620px;
     height: 620px;
     background-repeat: no-repeat;
     text-align: center;
@@ -258,12 +249,6 @@ footer{
     flex-direction: column;
     margin: 0px 350px 0px 350px;
 }
-.dev4{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0px 350px 0px 350px;
-}
 /* testimonials */
 .testimonials{
     background-color:rgb(245,245,245);
@@ -298,7 +283,7 @@ footer{
     height: 600px;
     padding-top: 100px;
     background-image: url("Images/wallpaper5.jpg");
-    background-size: 100% 700px;
+    background-size: 1280px 700px;
     background-repeat: no-repeat;
 }
 .transparent_box{
@@ -319,9 +304,6 @@ footer{
     font-weight: 600;
     outline: none;
 }
-.buttons button:hover{
-    background-color: #23a5f6;
-}
 
 #label{
     height: 300px;
@@ -334,9 +316,6 @@ footer{
     margin: 25px;
     border: 0px;
     outline: none;
-}
-.label_button button:hover{
-    background-color: #23a5f6;
 }
 
 .label_button{
@@ -352,72 +331,5 @@ footer{
     font-weight: 600;
     outline: none;
 }
-
-/* results */
-#results{
-    height: 600px;
-    padding-top: 100px;
-    background-size: 1280px 700px;
-    background-repeat: no-repeat;
-}
-
-/* service bundle */
-#bundle{
-    height: 600px;
-    padding-top: 100px;
-    background-image: url("Images/wallpaper6.jpg");
-    background-size: 100% 700px;
-    background-repeat: no-repeat;
-}
-
-
-.buttons_bundle{
-    margin: 10px 0px 0px 80px;
-}
-
-.buttons_bundle button{
-    padding: 10px 15px 10px 15px;
-    background-color: black;
-    border-radius: 5%;
-    border: 0px;
-    font-size: 15px;
-    font-weight: 600;
-    outline: none;
-    color: white;
-}
-.buttons_bundle button:hover{
-    background-color: #23a5f6;
-}
-
-.buttons_bundle i{
-    color: white;
-}
-
-.transparent_box1{
-    margin-left: 50px;
-    background-color:  rgb(0, 0, 0,0.5);
-    height: 525px;
-    width: 1000px;
-}
-.label_button1{
-    position: relative;
-    left: 50px;
-    bottom: 60px;
-}
-
-.label_button1 button{
-    padding: 10px 15px 10px 15px;
-    background-color: lightskyblue;
-    border-radius: 5%;
-    border: 0px;
-    font-size: 20px;
-    font-weight: 600;
-    outline: none;
-}
-.label_button1 button:hover{
-    background-color: #23a5f6;
-}
-
-
 
 
