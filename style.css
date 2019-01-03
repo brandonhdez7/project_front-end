@@ -220,11 +220,11 @@ footer{
     color: white;
     margin: 80px 20px 0px 20px;
 }
+
 .about h1{
-    padding-top: 300px;
     font-size: 50px;
-    margin-top: 0px;
-    }
+    padding-top: 350px;
+}
 
 .article{
     height: 300px;
@@ -423,7 +423,309 @@ footer{
     background-color: #23a5f6;
 }
 
+/* media query */
 
+@media only screen and (max-width: 768px) {
+    
+    .test1{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 60px;
+    
+    }
+    .test2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main{
+        width: 100%;
+        height: 800px;
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px; 
+        margin: 20px 0px 0px 0px;
+
+    }
+
+    .flight{
+        float: left;
+        width: 290px;
+        font-size: 12px;
+        margin-left: 20px;
+       
+    }
+    .car{
+        float: right;
+        width: 290px;
+        margin-right: 20px;
+        
+    }
+    .hotel{
+        float: left;
+        width: 290px;
+        font-size: 12px;
+        margin-right: 20px;
+    }
+    .things{
+        float: right;
+        width: 290px;
+        font-size: 12px;
+        margin-right: 20px;
+    }
+
+    .title {
+        text-decoration: none;
+        color:white;
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+
+    .navbar a{
+        padding-top: 0px;
+    }
+
+    nav{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        background-size: 100% 400px;
+        height: 400px;
+    }
+
+    header h1{
+        padding-top: 110px;
+        font-size: 30px;
+        margin-top: 0px;
+    }
+    header i{
+            font-size: 20px;
+            font-weight: 300;
+    }
+    header button{
+        margin-top: 40px;
+        padding: 5px 10px 5px 10px;
+        text-align: center;
+        background-color: lightskyblue;
+        border-radius: 5%;
+        border: 0px;
+        font-size: 20px;
+        font-weight: 600;
+        outline: none;
+    }
+    .about{
+    background-size: 100% 400px;
+    height: 400px;
+    }
+
+    .about h1{
+        padding-top: 200px;
+        font-size: 35px;
+        margin-top: 0px;
+        }
+
+    .article{
+            height: 300px;
+        }
+    .article p{
+            text-align: center;
+            padding: 50px 100px 20px 100px;
+            font-size: 20px;
+    }
+    .devs{
+        display: flex;
+        flex-direction: column;
+    }
+    .devs img{
+        border-radius: 50%;
+        width: 250px;
+    }
+    .dev p{
+        text-align: center;
+    }
+    .dev1{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px 200px 20px 200px;
+    }
+    .dev2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px 200px 20px 200px;
+    }
+    .dev3{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px 200px 20px 200px;
+    }
+    .dev4{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px 200px 20px 200px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        background-color:black;
+        height: 200px;
+        color: white;
+        padding-bottom: 0px;
+        width: 100%;
+    
+    }
+    .testi{
+        padding-top: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .testi h6{
+        color: white;
+        /* position: relative;
+        left: 550px;
+        top: 150px; */
+        margin: 0px;
+        padding: 0px;
+        position: inherit;
+    }
+    #icon{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    #icon a{
+        position: inherit;
+        /* position: relative;
+        top: 100px;
+        left: 100px; */
+        font-size: 25px;
+        padding-top: 20px;
+        text-decoration: none;
+    }
+
+
+    .transparent_box{
+        margin-left: 30px;
+        height: 500px;
+        width: 650px;
+    }
+
+    .transparent_box1{
+        margin-left: 30px;
+        height: 500px;
+        width: 650px;
+    }
+    
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+    
+    .test1{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 60px;
+    
+    }
+    .test2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        align-items: center;
+    }
+
+    .flight{
+        margin-bottom: 50px;
+        
+    }
+    .car{
+        margin-bottom: 50px; 
+    }
+    .hotel{
+        margin-bottom: 50px;
+
+    }
+    .things{
+        margin-bottom: 50px; 
+    }
+
+    .title {
+        text-decoration: none;
+        color:white;
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+
+    .navbar a{
+        padding-top: 0px;
+    }
+
+    nav{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        background-size: 100% 300px;
+        height: 300px;
+    }
+
+    header h1{
+        padding-top: 110px;
+        font-size: 25px;
+        margin-top: 0px;
+    }
+    header i{
+            font-size: 20px;
+            font-weight: 300;
+    }
+    header button{
+        margin-top: 30px;
+        padding: 5px 10px 5px 10px;
+        text-align: center;
+        background-color: lightskyblue;
+        border-radius: 5%;
+        border: 0px;
+        font-size: 15px;
+        font-weight: 600;
+        outline: none;
+    }
+}
 
 @media only screen and (max-width: 480px) {
 
