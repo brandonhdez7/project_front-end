@@ -175,7 +175,7 @@ footer{
 }
 .box{
     width: 50%;
-    padding-top: 130px;
+    margin-top: -250px;
     margin-right: 150px;
 }
 .box input{
@@ -206,10 +206,10 @@ footer{
     width: 350px;
     position: relative;
     height: 350px;
-    left: 750px;
-    bottom: 410px;
+    left: 60%;
+    top: 100px;
     border: 1px solid black;
-  }
+}
 /* about */
 
   .about{
@@ -439,6 +439,18 @@ footer{
         top: -70px;
         
     }
+    #contact {
+        position: relative;
+        left: 40%;
+    }
+    #map{
+        width: 350px;
+        position: relative;
+        height: 350px;
+        left: 60%;
+        bottom: 410px;
+        border: 1px solid black;
+    }
 @media only screen and (max-width: 1069px) {
     main {
         margin-bottom: 200px;
@@ -654,30 +666,59 @@ footer{
         height: 500px;
         width: 650px;
     }
+    #contact {
+        position: relative;
+        left: 40%;
+    }
+    #map{
+        width: 350px;
+        
+        left: 27%;
+        /* top: 100px; */
+        border: 1px solid black;
+    }
+    .contact {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 200px;
+    }
+    .box {
+        position: relative;
+        text-align: center;
+        top: 400px;
+        left: 11%;
+    }
+    #contact-submit {
+        position: relative;
+        left: 1px;
+    }
     
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 660px) {
 
+    
     .test1{
         display: flex;
         flex-direction: column;
         padding-bottom: 60px;
-
+        
     }
     .test2{
         display: flex;
         flex-direction: column;
     }
-
+    
     main{
         display: flex;
         align-items: center;
         flex-direction: column;
         height: max-content;
     }
-
+    
     .flight{
         margin-bottom: 50px
     }
@@ -690,35 +731,35 @@ footer{
     .things{
         margin-bottom: 50px
     }
-
+    
     .title {
         text-decoration: none;
         color:white;
         font-weight: 900;
     }
-
+    
     .title a{
         text-align: center;
     }
-
+    
     nav{
         width: 100%;
-
+        
     }
-
+    
     header{
         background-size: 100% 300px;
         height: 300px;
     }
-
+    
     header h1{
         padding-top: 110px;
         font-size: 30px;
         margin-top: 0px;
     }
     header i{
-            font-size: 20px;
-            font-weight: 300;
+        font-size: 20px;
+        font-weight: 300;
     }
     header button{
         margin-top: 30px;
@@ -777,7 +818,7 @@ footer{
         /* left: 80px; */
         /* top: -30px; */
         /* margin: 10px; */
-    
+        
     }
     .label_button button:hover{
         background-color: #23a5f6;
@@ -796,7 +837,7 @@ footer{
         font-weight: 600;
         outline: none;
     }
-
+    
     #flight_button {
         width: 116px;
         margin-left: -8px;
@@ -814,26 +855,19 @@ footer{
     #car_button {
         width: 116px;
     }
-    #label input {
-  
-        /* position: fixed */
-    }
-    /* .navbar{
-        display: none;
-    } */
-
+    
     .about{
         
         background-size: 100% 300px;
         height: 300px;
         margin: 80px 10px 0px 10px;
-
+        
     }
-
+    
     .about h1{
-    padding-top: 150px;
-    font-size: 25px;
-    margin-top: 0px;
+        padding-top: 150px;
+        font-size: 25px;
+        margin-top: 0px;
     }
     .article{
         height: 320px;
@@ -842,42 +876,69 @@ footer{
         text-align: center;
         padding: 50px 100px 20px 100px;
         font-size: 15px;
-}
-.devs{
-    display: flex;
-    flex-direction: column;
-}
-.devs img{
-    border-radius: 50%;
-    width: 150px;
-}
-.dev p{
-    text-align: center;
-}
-.dev1{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0px 50px 20px 50px;
-}
-.dev2{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0px 50px 20px 50px;
-}
-.dev3{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0px 50px 20px 50px;
-}
-.dev4{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0px 50px 20px 50px;
-}
+    }
+    .devs{
+        display: flex;
+        flex-direction: column;
+    }
+    .devs img{
+        border-radius: 50%;
+        width: 150px;
+    }
+    .dev p{
+        text-align: center;
+    }
+    .dev1{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px 50px 20px 50px;
+    }
+    .dev2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px 50px 20px 50px;
+    }
+    .dev3{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px 50px 20px 50px;
+    }
+    .dev4{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px 50px 20px 50px;
+    }
+    #map{
+        width: 350px;
+        position: relative;
+        height: 350px;
+        left: 6%;
+        border: 1px solid black;
+      }
+    .contact {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 200px;
+    }
+    #contact {
+        display: flex;
+        position: relative;
+        top: 60px;
+        left: 30%;
 
-
-}
+    }
+    .box {
+        position: relative;
+        left: 5%;
+    }
+    #contact-submit {
+        position: relative;
+        left: 45px;
+    }
+}}
