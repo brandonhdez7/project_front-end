@@ -1,7 +1,9 @@
 body{
+    margin-left: 0px;
     font-family: 'Muli', sans-serif;
     background-color: white;
-    margin: 0px;
+    width: 100%;
+    overflow-x: hidden;
   
 }
 
@@ -9,8 +11,8 @@ nav{
     width: 100%;
     display: flex;
     height: 80px;
-    margin: 0px 0px 0px 0px;
-    position: sticky;
+    /* margin: 0px 0px 0px 0px; */
+    /* position: sticky; */
     position: fixed;
     top: -1px;
     background-color: black;
@@ -26,7 +28,8 @@ nav{
 } 
 .navbar{
     display: flex;
-    margin-left: 550px;
+    /* align-content: flex-end; */
+    margin-left: 60%;
 }
 .navbar a{
     padding: 25px 10px 0px 10px;
@@ -36,12 +39,15 @@ nav{
 /* header */
 header{
     background-image: url("Images/wallpaper2.jpg");
-    background-size: 100% 620px;
+    /* background-position-x: -28px; */
+    
+    background-size: 100% 640px;
     height: 620px;
+    width: 100%;
     background-repeat: no-repeat;
     text-align: center;
     color: white;
-    margin: 80px 20px 0px 20px;
+    /* margin: 90px 20px 0px 10px; */
 }
 header h1{
 padding-top: 210px;
@@ -151,7 +157,6 @@ footer{
     padding:25px 10px 25px 10px;
     text-decoration: none;
 }
-/* contact */
 .contact h1{
     position: relative;
     top: 80px;
@@ -420,4 +425,166 @@ footer{
 
 
 
+@media only screen and (max-width: 773px) {
 
+    .test1{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 60px;
+
+    }
+    .test2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .flight{
+        margin-bottom: 50px
+    }
+    .car{
+        margin-bottom: 50px
+    }
+    .hotel{
+        margin-bottom: 50px
+    }
+    .things{
+        margin-bottom: 50px
+    }
+
+    .title {
+        text-decoration: none;
+        color:white;
+        font-weight: 900;
+    }
+
+    .title a{
+        text-align: center;
+    }
+
+    nav{
+        width: max-content;
+    }
+
+    header{
+        background-size: 100% 300px;
+        height: 300px;
+    }
+
+    header h1{
+        padding-top: 110px;
+        font-size: 30px;
+        margin-top: 0px;
+    }
+    header i{
+            font-size: 20px;
+            font-weight: 300;
+    }
+    header button{
+        margin-top: 30px;
+        padding: 5px 10px 5px 10px;
+        text-align: center;
+        background-color: lightskyblue;
+        border-radius: 5%;
+        border: 0px;
+        font-size: 15px;
+        font-weight: 600;
+        outline: none;
+    }
+    #service{
+        height: 600px;
+        padding-top: 100px;
+        background-image: url("Images/wallpaper5.jpg");
+        background-size: 100% 700px;
+        background-repeat: no-repeat;
+    }
+    .transparent_box{
+        margin-top: -40px;
+        margin-left: 40px;
+        background-color:  rgb(0, 0, 0,0.5);
+        height: 600px;
+        width: 80%;
+    }
+    .buttons button{
+        /* display: flex;
+        flex-direction: row; */
+        padding: 10px 15px 10px 15px;
+        background-color: lightskyblue;
+        border-radius: 5%;
+        border: 0px;
+        font-size: 14px;
+        font-weight: 600;
+        outline: none;
+    }
+    .buttons button:hover{
+        background-color: #23a5f6;
+    }
+    #label{
+        margin-top: 10px;
+        color: white;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    #label input{
+        width: 160px;
+        height: 20px;
+        font-size: 14px;
+        margin: 25px;
+        border: 0px;
+        outline: none;
+        position: relative;
+        /* left: 80px; */
+        /* top: -30px; */
+        /* margin: 10px; */
+    
+    }
+    .label_button button:hover{
+        background-color: #23a5f6;
+    }
+    
+    .label_button{
+        margin-top: 50px;
+        margin-left: 110px;
+    }
+    .label_button button{
+        padding: 10px 15px 10px 15px;
+        background-color: lightskyblue;
+        border-radius: 5%;
+        border: 0px;
+        font-size: 20px;
+        font-weight: 600;
+        outline: none;
+    }
+
+    #flight_button {
+        width: 116px;
+        margin-left: -8px;
+    }
+    #hotel_button {
+        margin-top: 3px;
+        margin-right: 25px;
+        margin-left: -8px;
+        width: 116px;
+    }
+    #things_button {
+        margin-right: 25px;
+        margin-left: -25px;
+    }
+    #car_button {
+        width: 116px;
+    }
+    #label input {
+  
+        /* position: fixed */
+    }
+    /* .navbar{
+        display: none;
+    } */
+
+
+}
