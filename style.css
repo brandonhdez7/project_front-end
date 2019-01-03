@@ -651,9 +651,10 @@ footer{
 
     .transparent_box1{
         margin-left: 30px;
-        height: 500px;
+        height: max-content;
         width: 650px;
     }
+
     
 }
 
@@ -842,42 +843,81 @@ footer{
         text-align: center;
         padding: 50px 100px 20px 100px;
         font-size: 15px;
-}
-.devs{
-    display: flex;
-    flex-direction: column;
-}
-.devs img{
-    border-radius: 50%;
-    width: 150px;
-}
-.dev p{
-    text-align: center;
-}
-.dev1{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0px 50px 20px 50px;
-}
-.dev2{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0px 50px 20px 50px;
-}
-.dev3{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0px 50px 20px 50px;
-}
-.dev4{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0px 50px 20px 50px;
-}
+    }
+    .devs{
+        display: flex;
+        flex-direction: column;
+    }
+    .devs img{
+        border-radius: 50%;
+        width: 150px;
+    }
+    .dev p{
+        text-align: center;
+    }
+    .dev1{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px 50px 20px 50px;
+    }
+    .dev2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px 50px 20px 50px;
+    }
+    .dev3{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px 50px 20px 50px;
+    }
+    .dev4{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px 50px 20px 50px;
+    }
 
+    #bundle{
+        height: 600px;
+        padding-top: 100px;
+        background-size: 100% 700px;
+        background-repeat: no-repeat;
+    }
+    .transparent_box1{
+        margin-top: -40px;
+        margin-left: 40px;
+        background-color:  rgb(0, 0, 0,0.5);
+        height: 600px;
+        width: 80%;
+    }
+    
+    .buttons_bundle button{
+        padding: 7px 10px 7px 10px;
+        background-color: black;
+        border-radius: 5%;
+        border: 0px;
+        font-size: 10px;
+        font-weight: 400;
+        outline: none;
+        color: white;
+    }
+    .label_button1{
+        text-align: center;
+        margin: 20px 0px 20px 0px;
+    }
+    
+    .label_button1 button{
+        padding: 10px 15px 10px 15px;
+        background-color: lightskyblue;
+        border-radius: 5%;
+        border: 0px;
+        font-size: 15px;
+        font-weight: 600;
+        outline: none;
+        margin: 20px 0px 20px 0px;
+    }
 
 }
