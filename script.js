@@ -8,7 +8,6 @@ const baseUrl = "https://dev-sandbox-api.airhob.com/sandboxapi/flights/v1.3/sear
 
 
 
-
 $('#flight_button').click(function(){
   console.log("some clicked on change html")
   $('#flight_button').css({
