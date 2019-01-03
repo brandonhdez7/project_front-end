@@ -8,7 +8,7 @@ const baseUrl = "https://dev-sandbox-api.airhob.com/sandboxapi/flights/v1.3/sear
 
 
 window.onload=function(){
-  document.getElementById("linkid").click();
+  document.getElementById("flight_button").click();
 };
 
 $('#flight_button').click(function(){
