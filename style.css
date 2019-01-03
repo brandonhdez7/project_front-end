@@ -2,11 +2,7 @@ body{
     margin-left: 0px;
     font-family: 'Muli', sans-serif;
     background-color: white;
-<<<<<<< HEAD
-    margin: 0px;
-=======
     width: 100%;
->>>>>>> 91a421c54c7cb5c47345429f7a598622f92dbef7
     overflow-x: hidden;
   
 }
@@ -49,11 +45,10 @@ header{
     
     background-size: 100% 640px;
     height: 620px;
-    width: 100%;
     background-repeat: no-repeat;
     text-align: center;
     color: white;
-    /* margin: 90px 20px 0px 10px; */
+    margin: 80px 20px 0px 20px;
 }
 header h1{
 padding-top: 210px;
@@ -826,6 +821,63 @@ footer{
     /* .navbar{
         display: none;
     } */
+
+    .about{
+        
+        background-size: 100% 300px;
+        height: 300px;
+        margin: 80px 10px 0px 10px;
+
+    }
+
+    .about h1{
+    padding-top: 150px;
+    font-size: 25px;
+    margin-top: 0px;
+    }
+    .article{
+        height: 320px;
+    }
+    .article p{
+        text-align: center;
+        padding: 50px 100px 20px 100px;
+        font-size: 15px;
+}
+.devs{
+    display: flex;
+    flex-direction: column;
+}
+.devs img{
+    border-radius: 50%;
+    width: 150px;
+}
+.dev p{
+    text-align: center;
+}
+.dev1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 50px 20px 50px;
+}
+.dev2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 50px 20px 50px;
+}
+.dev3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 50px 20px 50px;
+}
+.dev4{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 50px 20px 50px;
+}
 
 
 }
