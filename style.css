@@ -2,11 +2,8 @@ body{
     margin-left: 0px;
     font-family: 'Muli', sans-serif;
     background-color: white;
-<<<<<<< HEAD
     margin: 0px;
-=======
     width: 100%;
->>>>>>> 91a421c54c7cb5c47345429f7a598622f92dbef7
     overflow-x: hidden;
   
 }
@@ -49,11 +46,11 @@ header{
     
     background-size: 100% 640px;
     height: 620px;
-    width: 100%;
+    /* width: 100%; */
     background-repeat: no-repeat;
     text-align: center;
     color: white;
-    /* margin: 90px 20px 0px 10px; */
+    margin: 80px 20px 0px 20px;
 }
 header h1{
 padding-top: 210px;
