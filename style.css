@@ -2,7 +2,11 @@ body{
     margin-left: 0px;
     font-family: 'Muli', sans-serif;
     background-color: white;
+<<<<<<< HEAD
+    margin: 0px;
+=======
     width: 100%;
+>>>>>>> 91a421c54c7cb5c47345429f7a598622f92dbef7
     overflow-x: hidden;
   
 }
