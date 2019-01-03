@@ -969,7 +969,6 @@ footer{
         flex-direction: column;
         margin: 0px 50px 20px 50px;
     }
-<<<<<<< HEAD
     #map{
         width: 350px;
         position: relative;
@@ -989,8 +988,7 @@ footer{
         position: relative;
         top: 60px;
         left: 30%;
-=======
-
+    }
     #bundle{
         height: 600px;
         padding-top: 100px;
@@ -1046,7 +1044,6 @@ footer{
     .buttons .fas{
         font-size: 15px;
     }
->>>>>>> 582b4e85edf4af739367495b172d82776828d04a
 
     }
     .box {
@@ -1057,4 +1054,4 @@ footer{
         position: relative;
         left: 45px;
     }
-}}
+}
