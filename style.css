@@ -425,7 +425,7 @@ footer{
 
 
 
-@media only screen and (max-width: 773px) {
+@media only screen and (max-width: 480px) {
 
     .test1{
         display: flex;
