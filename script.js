@@ -7,7 +7,9 @@ const apiKey = "ajQSXyBzfKvv4NANxvhyrcm4zhaTL9Wb"
 const baseUrl = "https://dev-sandbox-api.airhob.com/sandboxapi/flights/v1.3/search"
 
 
-
+window.onload=function(){
+  document.getElementById("flight_button").click();
+};
 
 $('#flight_button').click(function(){
   console.log("some clicked on change html")
