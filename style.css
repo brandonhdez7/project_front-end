@@ -2,11 +2,8 @@ body{
     margin-left: 0px;
     font-family: 'Muli', sans-serif;
     background-color: white;
-<<<<<<< HEAD
     margin: 0px;
-=======
     width: 100%;
->>>>>>> 91a421c54c7cb5c47345429f7a598622f92dbef7
     overflow-x: hidden;
   
 }
@@ -45,15 +42,12 @@ nav{
 /* header */
 header{
     background-image: url("Images/wallpaper2.jpg");
-    /* background-position-x: -28px; */
-    
-    background-size: 100% 640px;
+    background-size: 100% 620px;
     height: 620px;
-    width: 100%;
     background-repeat: no-repeat;
     text-align: center;
     color: white;
-    /* margin: 90px 20px 0px 10px; */
+    margin: 80px 20px 0px 20px;
 }
 header h1{
 padding-top: 210px;
@@ -315,7 +309,7 @@ footer{
 .transparent_box{
     margin-left: 50px;
     background-color:  rgb(0, 0, 0,0.5);
-    height: 500px;
+    height: max-content;
     width: 1000px;
 }
 .buttons{
@@ -335,7 +329,7 @@ footer{
 }
 
 #label{
-    height: 300px;
+    height: max-content;
     color: white;
     font-size: 20px;
 }
@@ -351,8 +345,7 @@ footer{
 }
 
 .label_button{
-    margin-top: 0px;
-    margin-left: 50px;
+    margin: 30px 0px 30px 50px;
 }
 .label_button button{
     padding: 10px 15px 10px 15px;
@@ -448,6 +441,12 @@ footer{
     main {
         margin-bottom: 200px;
     }
+
+    .transparent_box{
+        margin-left: 30px;
+        height: 500px;
+        width: 700px;
+    } 
 }
 
 @media only screen and (max-width: 768px) {
@@ -659,11 +658,14 @@ footer{
         height: 500px;
         width: 650px;
     }
+    input{
+        margin-right: 250px;
+    }
     
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 675px) {
 
     .test1{
         display: flex;
