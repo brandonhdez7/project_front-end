@@ -4,6 +4,7 @@ body{
     background-color: white;
     width: 100%;
     overflow-x: hidden;
+    margin: 0px;
   
 }
 
@@ -308,10 +309,12 @@ footer{
     background-repeat: no-repeat;
 }
 .transparent_box{
-    margin-left: 50px;
+    /* margin-left: 50px; */
     background-color:  rgb(0, 0, 0,0.5);
     height: 500px;
     width: 1000px;
+    margin: auto;
+    text-align: center;
 }
 .buttons{
     padding: 50px 0px 0px 50px;
@@ -347,7 +350,7 @@ footer{
 
 .label_button{
     margin-top: 0px;
-    margin-left: 50px;
+    margin-left: 0px;
 }
 .label_button button{
     padding: 10px 15px 10px 15px;
@@ -400,14 +403,15 @@ footer{
 }
 
 .transparent_box1{
-    margin-left: 50px;
+    /* margin-left: 50px; */
     background-color:  rgb(0, 0, 0,0.5);
     height: 525px;
     width: 1000px;
+    margin: auto;
+    text-align: center;
 }
 .label_button1{
     position: relative;
-    left: 50px;
     bottom: 60px;
 }
 
@@ -442,6 +446,9 @@ footer{
 @media only screen and (max-width: 1069px) {
     main {
         margin-bottom: 200px;
+    }
+    .transparent_box1{
+        width: max-content;
     }
 }
 
@@ -509,6 +516,7 @@ footer{
         position: relative;
         margin-left: 0px;
         top: 0px;
+        padding-bottom: 10px;
     }
 
     .navbar a{
@@ -641,6 +649,7 @@ footer{
         padding-top: 20px;
         text-decoration: none;
     }
+    
 
 
     .transparent_box{
@@ -652,7 +661,54 @@ footer{
     .transparent_box1{
         margin-left: 30px;
         height: max-content;
-        width: 650px;
+        width: 80%;
+    }
+
+
+    .buttons button{
+        /* display: flex;
+        flex-direction: row; */
+        padding: 10px 15px 10px 15px;
+        background-color: lightskyblue;
+        border-radius: 5%;
+        border: 0px;
+        font-size: 14px;
+        font-weight: 600;
+        outline: none;
+    }
+    #label{
+        margin-top: 10px;
+        color: white;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    #label input{
+        width: 160px;
+        height: 20px;
+        font-size: 14px;
+        margin: 25px;
+        border: 0px;
+        outline: none;
+        position: relative;
+        z-index: 0;
+        /* left: 80px; */
+        /* top: -30px; */
+        /* margin: 10px; */
+    
+    }
+    
+    .label_button{
+        margin-top: 50px;
+        margin-left: 110px;
+    }
+    .label_button button{
+        padding: 10px 15px 10px 15px;
+        background-color: lightskyblue;
+        border-radius: 5%;
+        border: 0px;
+        font-size: 20px;
+        font-weight: 600;
+        outline: none;
     }
 
     
@@ -713,7 +769,7 @@ footer{
     }
 
     header h1{
-        padding-top: 110px;
+        padding-top: 70px;
         font-size: 30px;
         margin-top: 0px;
     }
@@ -892,6 +948,7 @@ footer{
         background-color:  rgb(0, 0, 0,0.5);
         height: 600px;
         width: 80%;
+
     }
     
     .buttons_bundle button{
@@ -918,6 +975,21 @@ footer{
         font-weight: 600;
         outline: none;
         margin: 20px 0px 20px 0px;
+    }
+
+    .buttons button{
+        padding: 7px 10px 7px 10px;
+        background-color: lightskyblue;
+        border-radius: 5%;
+        border: 0px;
+        font-size: 15px;
+        font-weight: 500;
+        outline: none;
+        justify-content: center;
+    }
+
+    .buttons .fas{
+        font-size: 15px;
     }
 
 }
