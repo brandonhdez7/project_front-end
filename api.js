@@ -27,10 +27,15 @@ $.getJSON(searchURL,function(searchResults){
     // searchResults.map((item)=>{
     //     console.log(item);
     // })
-    for(item in searchResults){
-        console.log(searchResults[item]);
-        i++;
-    }
+    // for(item in searchResults){
+    //     console.log(searchResults[item][i].offerItems[0].price.total);
+    //     i++;
+    // }
+    searchResults.data.forEach((flight)=>{
+        console.log(flight.offerItems[0].price.total);
+    })
+
+
     // $('#search-form').submit((event)=>{
     //     event.preventDefault();
     //     // searchResults.
