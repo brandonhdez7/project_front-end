@@ -22,7 +22,7 @@ $.getJSON(searchURL,function(searchResults){
     console.log(searchResults);
     console.log(searchURL);
     console.log(carRentalParam);
-    console.log(searchResults.result.data[0].offerItems[0].price.total)
+    // console.log(searchResults.result.data[0].offerItems[0].price.total)
     let i = 0;
     // searchResults.map((item)=>{
     //     console.log(item);
@@ -30,10 +30,10 @@ $.getJSON(searchURL,function(searchResults){
     searchResults.data.forEach((flight)=>{
         $('#flight-body').append(`
         <tr>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
+            <td>${flight.offerItems[0].services[0].segments[0].flightSegment.departure.iataCode}</td>
+            <td>${flight.offerItems[0].services[0].segments[0].flightSegment.arrival.iataCode}</td>
+            <td>${flight.offerItems[0].services[0].segments[0].flightSegment.departure.at}</td>
+            <td>${flight.offerItems[0].services[0].segments[0].flightSegment.arrival.at}</td>
             <td>${flight.offerItems[0].price.total}</td>
         </tr>
         `)
