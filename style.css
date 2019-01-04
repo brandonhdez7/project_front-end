@@ -29,9 +29,10 @@ nav{
 } 
 .navbar{
     display: flex;
+    /* position: relative; */
     /* align-content: flex-end; */
     margin-left: 60%;
-    margin-right: 60px;
+    margin-right: 10%;
 }
 .navbar a{
     padding: 25px 10px 0px 10px;
