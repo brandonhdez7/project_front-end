@@ -1,12 +1,13 @@
 var parameters = new URLSearchParams(window.location.search);
-const destinationParam = parameters.get('destination');
-const originParam = parameters.get('origin');
-const departDateParam = parameters.get('departureDate');
-var destinationURL = "http://cm.ridiculous-inc.com/flight/lowest/?" + destinationParam;
-
+var destinationParam = parameters.get('destination');
+var originParam = parameters.get('origin');
+var departDateParam = parameters.get('departureDate');
+var returnDateParam = parameters.get('returnDate');
+var searchURL = "http://cm.ridiculous-inc.com/flight/lowest/?" + "destination=" + destinationParam + "&origin=" + originParam + "&departureDate=" + departDateParam + "&returnDate=" + returnDateParam;
 let resultsBox = document.querySelector('#results');
 resultsBox.innerHTML = destinationParam;
 
-$.getJSON(destinationURL,function(searchResults){
+$.getJSON(searchURL,function(searchResults){
     console.log(searchResults);
+    console.log(searchURL);
 })
