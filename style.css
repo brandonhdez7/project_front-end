@@ -5,7 +5,10 @@ body{
     width: 100%;
     overflow-x: hidden;
     margin: 0px;
-  
+}
+.main_search {
+    position: relative;
+    top: -70px;
 }
 
 nav{
@@ -29,10 +32,7 @@ nav{
 } 
 .navbar{
     display: flex;
-    /* position: relative; */
-    /* align-content: flex-end; */
     margin-left: 60%;
-    margin-right: 10%;
 }
 .navbar a{
     padding: 25px 10px 0px 10px;
@@ -641,11 +641,6 @@ footer{
         display: flex;
         flex-direction: column;
         background-color:black;
-        height: max-content;
-        color: white;
-        padding-bottom: 0px;
-        width: 100%;
-    
     }
     .link1{
         margin: 15px 10px 25px 15px;
