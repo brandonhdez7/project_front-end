@@ -21,8 +21,8 @@ $('#flight_button').click(function(){
   <button id="hotel_budle" type="checkbox"><i class="fas fa-hotel fa-1x"></i><br>Hotel<br><input type="checkbox"></button>
   <button id="things_bundle" type="checkbox"><i class="fas fa-funnel-dollar fa-1x"></i><br>Things to do<br><input type="checkbox"></button>
   `)
-  $('#label').html(`Flying from<input type="text" placeholder="Location"></input> Flying to<input type="text" placeholder="Location" name="destination"></input><br>
-  Departing<input type="date"></input> Returning<input type="date"></input> `);
+  $('#label').html(`Flying from<input type="text" placeholder="Location" name="origin"></input> Flying to<input type="text" placeholder="Location" name="destination"></input><br>
+  Departing<input type="date" name="departureDate"></input> Returning<input type="date" name="returnDate"></input> `);
 })
 
 
