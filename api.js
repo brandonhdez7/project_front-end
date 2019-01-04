@@ -2,7 +2,7 @@ var parameters = new URLSearchParams(window.location.search);
 const destinationParam = parameters.get('destination');
 const originParam = parameters.get('origin');
 const departDateParam = parameters.get('departureDate');
-var destinationURL = "http://cm.ridiculous-inc.com/?" + destinationParam;
+var destinationURL = "http://cm.ridiculous-inc.com/flight/lowest/?" + destinationParam;
 
 let resultsBox = document.querySelector('#results');
 resultsBox.innerHTML = destinationParam;
