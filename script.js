@@ -2,10 +2,7 @@
 //   $( "#service_link" ).load( "index.html #service" );
 
 // })
-const apiKey = "ajQSXyBzfKvv4NANxvhyrcm4zhaTL9Wb"
-
-const baseUrl = "https://dev-sandbox-api.airhob.com/sandboxapi/flights/v1.3/search"
-
+const baseUrl = `http://cm.ridiculous-inc.com/?origin=`
 
 window.onload=function(){
   document.getElementById("flight_button").click();

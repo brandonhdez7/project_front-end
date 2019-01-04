@@ -13,7 +13,6 @@ nav{
     display: flex;
     height: 80px;
     /* margin: 0px 0px 0px 0px; */
-    /* position: sticky; */
     position: fixed;
     top: -1px;
     background-color: black;
@@ -734,7 +733,7 @@ footer{
         border: 0px;
         outline: none;
         position: relative;
-        index: 0; */
+        z-index: 0; 
         /* left: 80px; */
         /* top: -30px; */
         /* margin: 10px; */
