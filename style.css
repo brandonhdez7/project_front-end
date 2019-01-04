@@ -33,6 +33,7 @@ nav{
     display: flex;
     /* align-content: flex-end; */
     margin-left: 60%;
+    margin-right: 60px;
 }
 .navbar a{
     padding: 25px 10px 0px 10px;
@@ -131,30 +132,45 @@ main button{
 
 footer{
     display: flex;
+    flex-direction: column;
     background-color:black;
     height: 200px;
     color: white;
     padding-bottom: 0px;
+    align-items: center;
 
 }
+.link1{
+    margin: 10px 100px 25px 100px;
+}
+
+.links{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.link1 h5{
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
 .testi{
-    width: 75%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px; 
 }
 .testi h6{
     color: white;
-    position: relative;
-    left: 550px;
-    top: 150px;
     margin: 0px;
     padding: 0px;
 }
 .icon{
-    width: 25%;
+    width: 100%;
+    justify-content: center;
 }
 #icon a{
-    position: relative;
-    top: 100px;
-    left: 100px;
     font-size: 25px;
     padding:25px 10px 25px 10px;
     text-decoration: none;
@@ -171,7 +187,7 @@ footer{
 
 .form{
     display: flex;
-    height: 540px;
+    height: max-content;
     justify-content: center;
 }
 .box{
@@ -529,6 +545,7 @@ footer{
         margin-left: 0px;
         top: 0px;
         padding-bottom: 10px;
+        margin-right: 0px;
     }
 
     .navbar a{
@@ -625,14 +642,26 @@ footer{
         display: flex;
         flex-direction: column;
         background-color:black;
-        height: 200px;
+        height: max-content;
         color: white;
         padding-bottom: 0px;
         width: 100%;
     
     }
+    .link1{
+        margin: 15px 10px 25px 15px;
+    }
+    
+    .links{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .link1 h5{
+        margin: 5px;
+    }
     .testi{
-        padding-top: 100px;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -662,11 +691,13 @@ footer{
         text-decoration: none;
     }
     
-
+    #service{
+        height: 500px;
+    }
 
     .transparent_box{
         margin-left: 30px;
-        height: 500px;
+        height: 400px;
         width: 650px;
     }
 
@@ -689,6 +720,7 @@ footer{
         outline: none;
     }
     #label{
+        height: 200px;
         margin-top: 10px;
         color: white;
         font-size: 16px;
@@ -702,7 +734,7 @@ footer{
         border: 0px;
         outline: none;
         position: relative;
-        z-index: 0;
+        index: 0; */
         /* left: 80px; */
         /* top: -30px; */
         /* margin: 10px; */
@@ -738,7 +770,7 @@ footer{
     }
     
     .label_button{
-        margin-top: 50px;
+        margin-top: 0px;
         margin-left: 110px;
     }
     .label_button button{
@@ -749,6 +781,10 @@ footer{
         font-size: 20px;
         font-weight: 600;
         outline: none;
+    }
+
+    .form{
+        height: 550px;
     }
 
     
@@ -777,7 +813,7 @@ footer{
     }
     
     .flight{
-        margin-bottom: 50px
+        margin-bottom: 50px;
     }
     .car{
         margin-bottom: 50px
@@ -807,6 +843,7 @@ footer{
     header{
         background-size: 100% 300px;
         height: 300px;
+        margin: 80px 10px 0px 10px;
     }
     
     header h1{
@@ -830,23 +867,23 @@ footer{
         outline: none;
     }
     #service{
-        height: 600px;
+        height: max-content;
         padding-top: 100px;
         background-image: url("Images/wallpaper5.jpg");
-        background-size: 100% 700px;
+        background-size: 100% 500px;
         background-repeat: no-repeat;
     }
     .transparent_box{
-        margin-top: -40px;
+        margin-top: -85px;
         margin-left: 40px;
         background-color:  rgb(0, 0, 0,0.5);
-        height: 600px;
+        height: 400px;
         width: 80%;
     }
     .buttons button{
         /* display: flex;
         flex-direction: row; */
-        padding: 10px 15px 10px 15px;
+        padding: 0px 0px 0px 0px;
         background-color: lightskyblue;
         border-radius: 5%;
         border: 0px;
@@ -858,6 +895,7 @@ footer{
         background-color: #23a5f6;
     }
     #label{
+        height: max-content;
         margin-top: 10px;
         color: white;
         font-size: 16px;
@@ -867,7 +905,7 @@ footer{
         width: 160px;
         height: 20px;
         font-size: 14px;
-        margin: 25px;
+        margin: 10px;
         border: 0px;
         outline: none;
         position: relative;
@@ -882,8 +920,8 @@ footer{
     }
     
     .label_button{
-        margin-top: 50px;
-        margin-left: 110px;
+        margin-top: 20px;
+        justify-content: center;
     }
     .label_button button{
         padding: 10px 15px 10px 15px;
@@ -896,21 +934,25 @@ footer{
     }
     
     #flight_button {
-        width: 116px;
+        width: 100px;
         margin-left: -8px;
+        padding: 0px 0px 0px 0px;
     }
     #hotel_button {
         margin-top: 3px;
         margin-right: 25px;
         margin-left: -8px;
-        width: 116px;
+        width: 100px;
+        padding: 0px 0px 0px 0px;
     }
     #things_button {
         margin-right: 25px;
         margin-left: -25px;
+        padding: 0px 0px 0px 0px;
     }
     #car_button {
-        width: 116px;
+        width: 100px;
+        padding: 0px 0px 0px 0px;
     }
     
     .about{
@@ -990,16 +1032,16 @@ footer{
         left: 30%;
     }
     #bundle{
-        height: 600px;
+        height: 100%;
         padding-top: 100px;
-        background-size: 100% 700px;
+        background-size: 100% 600px;
         background-repeat: no-repeat;
     }
     .transparent_box1{
-        margin-top: -40px;
+        margin-top: 0px;
         margin-left: 40px;
         background-color:  rgb(0, 0, 0,0.5);
-        height: 600px;
+        height: 450px;
         width: 80%;
 
     }
@@ -1016,7 +1058,7 @@ footer{
     }
     .label_button1{
         text-align: center;
-        margin: 20px 0px 20px 0px;
+        margin: 60px 0px 20px 0px;
     }
     
     .label_button1 button{
