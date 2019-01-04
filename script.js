@@ -2,12 +2,11 @@
 //   $( "#service_link" ).load( "index.html #service" );
 
 // })
-const apiKey = "ajQSXyBzfKvv4NANxvhyrcm4zhaTL9Wb"
+const baseUrl = `http://cm.ridiculous-inc.com/?origin=`
 
-const baseUrl = "https://dev-sandbox-api.airhob.com/sandboxapi/flights/v1.3/search"
-
-
-
+window.onload=function(){
+  document.getElementById("flight_button").click();
+};
 
 $('#flight_button').click(function(){
   console.log("some clicked on change html")
@@ -22,7 +21,7 @@ $('#flight_button').click(function(){
   <button id="hotel_budle" type="checkbox"><i class="fas fa-hotel fa-1x"></i><br>Hotel<br><input type="checkbox"></button>
   <button id="things_bundle" type="checkbox"><i class="fas fa-funnel-dollar fa-1x"></i><br>Things to do<br><input type="checkbox"></button>
   `)
-  $('#label').html(`Flying from<input type="text" placeholder="Location"></input> Flying to<input type="text" placeholder="Location"></input><br>
+  $('#label').html(`Flying from<input type="text" placeholder="Location"></input> Flying to<input type="text" placeholder="Location" name="destination"></input><br>
   Departing<input type="date"></input> Returning<input type="date"></input> `);
 })
 
