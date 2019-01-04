@@ -13,7 +13,6 @@ var resultsTable = `
 <td>${departDateParam}</td>
 <td>${returnDateParam}</td>
 
-
 </tr>
 `
 resultsBox.innerHTML = resultsTable;
@@ -27,15 +26,20 @@ $.getJSON(searchURL,function(searchResults){
     // searchResults.map((item)=>{
     //     console.log(item);
     // })
+    searchResults.data.forEach((flight)=>{
+        $('#flight-body').append(`
+        <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>${flight.offerItems[0].price.total}</td>
+        </tr>
+        `)
+    })
     // for(item in searchResults){
-    //     console.log(searchResults[item][i].offerItems[0].price.total);
     //     i++;
     // }
-    searchResults.data.forEach((flight)=>{
-        console.log(flight.offerItems[0].price.total);
-    })
-
-
     // $('#search-form').submit((event)=>{
     //     event.preventDefault();
     //     // searchResults.

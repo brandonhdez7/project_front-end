@@ -379,7 +379,7 @@ footer{
 
 /* results */
 #results{
-    height: 600px;
+    height: max-content;
     padding-top: 100px;
     background-size: 1280px 700px;
     background-repeat: no-repeat;
