@@ -141,7 +141,7 @@ footer{
 
 }
 .link1{
-    margin: 10px 100px 25px 100px;
+    margin: 15px 100px 25px 100px;
 }
 
 .links{
@@ -876,9 +876,11 @@ footer{
     .transparent_box{
         margin-top: -85px;
         margin-left: 40px;
+        margin-bottom: 20px;
         background-color:  rgb(0, 0, 0,0.5);
         height: 400px;
         width: 80%;
+
     }
     .buttons button{
         /* display: flex;
@@ -1032,14 +1034,15 @@ footer{
         left: 30%;
     }
     #bundle{
-        height: 100%;
+        height: max-content;
         padding-top: 100px;
         background-size: 100% 600px;
         background-repeat: no-repeat;
     }
     .transparent_box1{
-        margin-top: 0px;
+        margin-top: 10px;
         margin-left: 40px;
+        margin-bottom: 20px;
         background-color:  rgb(0, 0, 0,0.5);
         height: 450px;
         width: 80%;
