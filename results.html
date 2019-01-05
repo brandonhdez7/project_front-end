@@ -10,43 +10,49 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 <body>
     <nav>
         <div class="title">
-            <a href="index.html"><h1>The Proffesional Hobo</h1></a>
+            <a href="index.html"><h4 id="result-title">The Proffesional Hobo</h4></a>
         </div>
-        <div class="navbar">
+        <div class="navbar" id="rightNav">
             <a id="service_link" href="service_bundle.html">Services</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </div>
     </nav>
     
+    <div id="info">
+        <div class="col-6">
+            <table id="flight-table" class="table">
+                <thead>
+                    <tr>
+                        <th>Departure</th>
+                        <th>Arrival</th>
+                        <th>Date Range</th>
+                    </tr>
+                </thead>
+                <tbody id="search-body"></tbody>
+            </table>
+        </div>
+    </div>
+
     <div id="results">
             
         <div class="col-12">
             <table id="flight-table" class="table table-striped">
                 <thead>
                     <tr>
-                        <th>Departure</th>
-                        <th>Arrival</th>
-                        <th>Depart Date</th>
-                        <th>Arrival Date</th>
+                        <th>Airline</th>
+                        <th>Depart TIme</th>
+                        <th>Arrival TIme</th>
                         <th>Price</th>
                     </tr>
                 </thead>
-                <tbody id="flight-body">
-                    <tr>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-
-                </tbody>
+                <tbody id="flight-body"></tbody>
             </table>
         </div>
         
