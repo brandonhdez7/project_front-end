@@ -25,37 +25,69 @@
         </div>
     </nav>
     
-    <div id="info">
-        <div class="col-6">
-            <table id="flight-table" class="table">
-                <thead>
-                    <tr>
-                        <th>Departure</th>
-                        <th>Arrival</th>
-                        <th>Date Range</th>
-                    </tr>
-                </thead>
-                <tbody id="search-body"></tbody>
-            </table>
+    <div class="row">
+        <div id="info" class="col-5-sm">
+                <table id="flight-table" class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Departure</th>
+                            <th>Arrival</th>
+                            <th>Depart Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="search-body"></tbody>
+                </table>
+        </div>
+        <div id="info" class="col-5">
+                <table id="flight-table" class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Departure</th>
+                            <th>Arrival</th>
+                            <th>Return Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="search-body2"></tbody>
+                </table>
         </div>
     </div>
-
     <div id="results">
-            
-        <div class="col-12">
-            <table id="flight-table" class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Airline</th>
-                        <th>Depart TIme</th>
-                        <th>Arrival TIme</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody id="flight-body"></tbody>
-            </table>
+        <div class="row">
+            <div class="col-5">
+                <table id="flight-table" class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Airline</th>
+                            <th>Depart TIme</th>
+                            <th>Arrival TIme</th>
+                        </tr>
+                    </thead>
+                    <tbody id="flight-body"></tbody>
+                </table>
+            </div>
+            <div class="col-5">
+                <table id="flight-table" class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Airline</th>
+                            <th>Depart TIme</th>
+                            <th>Arrival TIme</th>
+                        </tr>
+                    </thead>
+                    <tbody id="flight-body2"></tbody>
+                </table>
+            </div>
+            <div class="col-2">
+                <table id="flight-table" class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Roundtrip Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="total-price"></tbody>
+                </table>
+            </div>
         </div>
-        
     
     
     </div>

@@ -11,7 +11,16 @@ $('#search-body').append(
     <tr>
         <td>${originParam}</td>
         <td>${destinationParam}</td>
-        <td>${departDateParam} - ${returnDateParam}</td>
+        <td>${departDateParam}</td>
+    </tr>
+    `
+)
+$('#search-body2').append(
+    `
+    <tr>
+        <td>${destinationParam}</td>
+        <td>${originParam}</td>
+        <td>${returnDateParam}</td>
     </tr>
     `
 )
@@ -22,51 +31,67 @@ $.getJSON(searchURL,function(searchResults){
    
     searchResults.data.forEach((flight)=>{
         var depart = flight.offerItems[0].services[0].segments[0].flightSegment.departure.at
+        var depart2 = flight.offerItems[0].services[1].segments[0].flightSegment.departure.at
         var arrival = flight.offerItems[0].services[0].segments[0].flightSegment.arrival.at
+        var arrival2 = flight.offerItems[0].services[1].segments[0].flightSegment.arrival.at
         var newDepart = depart.substring(11, 16)
+        var newDepart2 = depart2.substring(11, 16)
         var newArrival = arrival.substring(11, 16)
+        var newArrival2 = arrival2.substring(11, 16)
         var airline = flight.offerItems[0].services[0].segments[0].flightSegment.carrierCode
+        var airline2 = flight.offerItems[0].services[1].segments[0].flightSegment.carrierCode
         function newAirline(input){
-            if (airline === 'AA'){
+            if (input === 'AA'){
                 return ("American Airlines")
-            } else if (airline === "DL"){
+            } else if (input === "DL"){
                 return ("Delta Airlines")
-            } else if (airline === "F9"){
+            } else if (input === "F9"){
                 return ('Frontier Airlines')
-            } else if (airline === "NK"){
+            } else if (input === "NK"){
                 return ('Spirit Airlines')
-            } else if (airline === "UA"){
+            } else if (input === "UA"){
                 return ('United Airlines')
-            } else if (airline === "B6"){
+            } else if (input === "B6"){
                 return ('JetBlue')
-            } else if (airline === "AS"){
+            } else if (input === "AS"){
                 return ('Alaska Airlines')
             }
         }
         airline = newAirline(airline)
+        airline2 = newAirline(airline2)
 
         function convert(input) {
             return moment(input, 'HH:mm').format('h:mm A');
         }
         newDepart = convert(newDepart)
+        newDepart2 = convert(newDepart2)
         newArrival = convert(newArrival)
+        newArrival2 = convert(newArrival2)
        
         $('#flight-body').prepend(`
             <tr>
                 <td>${airline}</td>
                 <td>${newDepart}</td>
                 <td>${newArrival}</td>
-                <td>${flight.offerItems[0].price.total}</td>
             </tr>
+        `
+        )
+        $('#flight-body2').prepend(`
             <tr>
-                <td>${airline}</td>
-                <td>${newDepart}</td>
-                <td>${newArrival}</td>
-                <td>${flight.offerItems[0].price.total}</td>
+                <td>${airline2}</td>
+                <td>${newDepart2}</td>
+                <td>${newArrival2}</td>
+            </tr>
+        `
+        )
+        $('#total-price').prepend(`
+            <tr>
+                <td>$${flight.offerItems[0].price.total}</td>
             </tr>
         `
         
         )
+        
     })
 })
 
