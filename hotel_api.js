@@ -29,10 +29,7 @@ $('#search-body').append(
 $.getJSON(locationURL, function(location_result){
     var longitude = location_result.results[0].geometry.location.lng
     var latitude = location_result.results[0].geometry.location.lat
-    console.log(longitude)
-    console.log(latitude)
     const baseURL = `http://cm.ridiculous-inc.com/hotels/get?latitude=${latitude}&longitude=${longitude}&checkInDate=${checkInParam}&checkOutDate=${checkOutParam}&adults=${occupancyParam}&radius=20`
-    console.log(baseURL)
     $.getJSON(baseURL, (hotel_result)=>{
         hotel_result.data.forEach((hotel)=>{
             var name = hotel.hotel.name
@@ -40,7 +37,6 @@ $.getJSON(locationURL, function(location_result){
             $('#flight-body').prepend(`
                 <tr>
                     <td>${name}</td>
-                    <td></td>
                     <td>${price}</td>
                 </tr>
             `

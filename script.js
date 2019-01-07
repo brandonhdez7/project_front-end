@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 // $('#service_link').click(function(){
 //   $( "#service_link" ).load( "index.html #service" );
 
@@ -35,6 +37,7 @@ window.onload=function(){
   document.getElementById("flight_button").click();
 };
 
+>>>>>>> 904812e35b7439c9825b574d424a6b2ae62df336
 $('#flight_button').click(function(){
   console.log("some clicked on change html")
   $('#flight_button').css({
@@ -53,8 +56,8 @@ $('#flight_button').click(function(){
   $('.label_button1').html(`
       <a href="results.html"><button type="submit">Search</button></a>
   `)
-})
 
+})
 
 $('#car_button').click(function(){
   console.log("some clicked on change html")
