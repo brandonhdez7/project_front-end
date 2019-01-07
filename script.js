@@ -1,13 +1,3 @@
-// $('#service_link').click(function(){
-//   $( "#service_link" ).load( "index.html #service" );
-
-// })
-// const baseUrl = `http://cm.ridiculous-inc.com/?`
-
-window.onload=function(){
-  document.getElementById("flight_button").click();
-};
-
 $('#flight_button').click(function(){
   console.log("some clicked on change html")
   $('#flight_button').css({
@@ -26,8 +16,8 @@ $('#flight_button').click(function(){
   $('.label_button1').html(`
       <a href="results.html"><button type="submit">Search</button></a>
   `)
-})
 
+})
 
 $('#car_button').click(function(){
   console.log("some clicked on change html")
