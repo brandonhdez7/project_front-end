@@ -470,6 +470,37 @@ footer{
         bottom: 410px;
         border: 1px solid black;
     }
+
+    .banner{
+        display: flex;
+        justify-content: space-between;
+        height: 400px;
+
+    }
+
+    .mobile{
+        justify-content: center;
+        text-align: center;
+        margin-left: 125px;
+        margin-top: 70px;
+    }
+    .mobile_icons img{
+        width: 300px;
+    }
+
+    .mobile_image1 img{
+        width: 400px;
+        margin-top: 30px;
+        margin-right: 125px;
+    }
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1069px) {
     main {
         margin-bottom: 200px;
@@ -781,13 +812,18 @@ footer{
         height: 550px;
     }
 
-    
+    .banner{
+        display: none;
+    }
 }
 
 
 @media only screen and (max-width: 660px) {
 
-    
+    .banner{
+        display: none;
+    }
+
     .test1{
         display: flex;
         flex-direction: column;
