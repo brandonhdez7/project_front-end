@@ -111,3 +111,13 @@ $('#things_button').click(function(){
   Check in<input type="date"></input> Check out<input type="date"></input>`)
 
 });
+var myVar;
+            
+$(document).ready(function() {
+    myVar = setTimeout(showPage, 4500);
+});
+
+function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+}
