@@ -43,11 +43,11 @@ $.getJSON(searchURL,function(searchResults){
             if (input === 'AA'){
                 return ("American Airlines")
             } else if (input === "DL"){
-                return ("Delta Airlines")
+                return ("Delta")
             } else if (input === "F9"){
-                return ('Frontier Airlines')
+                return ('Frontier')
             } else if (input === "NK"){
-                return ('Spirit Airlines')
+                return ('Spirit')
             } else if (input === "UA"){
                 return ('United Airlines')
             } else if (input === "B6"){
