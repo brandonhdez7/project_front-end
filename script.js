@@ -23,6 +23,9 @@ $('#flight_button').click(function(){
   `)
   $('#label').html(`Flying from<input type="text" placeholder="Location" name="origin"></input> Flying to<input type="text" placeholder="Location" name="destination"></input><br>
   Departing<input type="date" name="departureDate"></input> Returning<input type="date" name="returnDate"></input> `);
+  $('.label_button1').html(`
+      <a href="results.html"><button type="submit">Search</button></a>
+  `)
 })
 
 
@@ -57,8 +60,12 @@ $('#hotel_button').click(function(){
   <button id="hotel_budle" type="checkbox"><i class="fas fa-hotel fa-1x"></i><br>Hotel<br><input type="checkbox"></button>
   <button id="things_bundle" type="checkbox"><i class="fas fa-funnel-dollar fa-1x"></i><br>Things to do<br><input type="checkbox"></button>
   `)
-  $('#label').html(`Destination<input type="text" placeholder="Location"></input><br>
-  Check in<input type="date"></input> Check out<input type="date"></input><br> Nights<input type="number"></input> Occupancy<input type="number" maxlength="4"></input>`);
+  $('#label').html(`Destination<input name=location type="text" placeholder="Location"></input><br>
+  Check in<input name="checkInDate" type="date"></input> Check out<input name="checkOutDate" type="date"></input><br> Nights<input type="number"></input> Occupancy<input name="adults" type="number" maxlength="4"></input>
+  `);
+  $('.label_button1').html(`
+      <a href="hotel_results.html"><button value="hotel results" formaction="hotel_results.html" type="submit">Search</button></a>
+  `);
 })
 
 

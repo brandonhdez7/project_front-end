@@ -27,16 +27,15 @@ $('#search-body2').append(
 $.getJSON(searchURL,function(searchResults){
     console.log(searchResults);
     console.log(searchURL);
-    console.log(carRentalParam);
    
     searchResults.data.forEach((flight)=>{
         var depart = flight.offerItems[0].services[0].segments[0].flightSegment.departure.at
-        var depart2 = flight.offerItems[0].services[1].segments[0].flightSegment.departure.at
-        var arrival = flight.offerItems[0].services[0].segments[0].flightSegment.arrival.at
-        var arrival2 = flight.offerItems[0].services[1].segments[0].flightSegment.arrival.at
         var newDepart = depart.substring(11, 16)
+        var depart2 = flight.offerItems[0].services[1].segments[0].flightSegment.departure.at
         var newDepart2 = depart2.substring(11, 16)
+        var arrival = flight.offerItems[0].services[0].segments[0].flightSegment.arrival.at
         var newArrival = arrival.substring(11, 16)
+        var arrival2 = flight.offerItems[0].services[1].segments[0].flightSegment.arrival.at
         var newArrival2 = arrival2.substring(11, 16)
         var airline = flight.offerItems[0].services[0].segments[0].flightSegment.carrierCode
         var airline2 = flight.offerItems[0].services[1].segments[0].flightSegment.carrierCode
