@@ -6,6 +6,8 @@ var returnDateParam = parameters.get('returnDate');
 var carRentalParam = parameters.getAll('searchType');
 var searchURL = "http://cm.ridiculous-inc.com/flight/lowest/?" + "origin=" + originParam + "&destination=" + destinationParam + "&departureDate=" + departDateParam + "&returnDate=" + returnDateParam;
 
+
+
 $('#search-body').append(
     `
     <tr>
@@ -93,4 +95,3 @@ $.getJSON(searchURL,function(searchResults){
         
     })
 })
-

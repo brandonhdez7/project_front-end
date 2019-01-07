@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 <body>
+    <div id="loader"></div>
     <nav>
         <div class="title">
             <a href="index.html"><h4 id="result-title">The Proffesional Hobo</h4></a>
@@ -24,9 +25,10 @@
             <a href="contact.html">Contact</a>
         </div>
     </nav>
-    <div class="container">
-        <div class="row">
-            <div id="info" class="col-5">
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <div class="container">
+            <div class="row">
+                <div id="info" class="col-5">
                     <table id="flight-table" class="table table-bordered">
                         <thead>
                             <tr>
@@ -37,8 +39,8 @@
                         </thead>
                         <tbody id="search-body"></tbody>
                     </table>
-            </div>
-            <div id="info" class="col-5">
+                </div>
+                <div id="info" class="col-5">
                     <table id="flight-table" class="table table-bordered">
                         <thead>
                             <tr>
@@ -49,51 +51,48 @@
                         </thead>
                         <tbody id="search-body2"></tbody>
                     </table>
-            </div>
-        </div>
-        <div id="results">
-            <div class="row">
-                <div class="col-5">
-                    <table id="flight-table" class="table table-striped table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Airline</th>
-                                <th>Depart TIme</th>
-                                <th>Arrival TIme</th>
-                            </tr>
-                        </thead>
-                        <tbody id="flight-body"></tbody>
-                    </table>
-                </div>
-                <div class="col-5">
-                    <table id="flight-table" class="table table-striped table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Airline</th>
-                                <th>Depart TIme</th>
-                                <th>Arrival TIme</th>
-                            </tr>
-                        </thead>
-                        <tbody id="flight-body2"></tbody>
-                    </table>
-                </div>
-                <div class="col-2">
-                    <table id="flight-table" class="table table-striped table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Roundtrip Price</th>
-                            </tr>
-                        </thead>
-                        <tbody id="total-price"></tbody>
-                    </table>
                 </div>
             </div>
-        
-        
+            <div id="results">
+                <div class="row">
+                    <div class="col-5">
+                        <table id="flight-table" class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Airline</th>
+                                    <th>Depart TIme</th>
+                                    <th>Arrival TIme</th>
+                                </tr>
+                            </thead>
+                            <tbody id="flight-body"></tbody>
+                        </table>
+                    </div>
+                    <div class="col-5">
+                        <table id="flight-table" class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Airline</th>
+                                    <th>Depart TIme</th>
+                                    <th>Arrival TIme</th>
+                                </tr>
+                            </thead>
+                            <tbody id="flight-body2"></tbody>
+                        </table>
+                    </div>
+                    <div class="col-2">
+                        <table id="flight-table" class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Roundtrip Price</th>
+                                </tr>
+                            </thead>
+                            <tbody id="total-price"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <footer>
-
+        <footer>
             <div class="links">
                     <div class="link1">
                         <a href="careers.html"><h5>Careers</h5></a>
@@ -121,8 +120,7 @@
                 <a href="#"><i class="devicon-slack-plain"></i></a>
             </div>
         </footer>
-    
-    
+    </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="script.js"></script>
         <script src="api.js"></script>
