@@ -10,6 +10,13 @@ location1 = "%20" + location1
 location1 = location2 + location1
 var locationURL = `https://maps.googleapis.com/maps/api/geocode/json?address=${location1}&key=AIzaSyB1TSCiV6L80P0PdYJ0QuYEdLKBpr-AgUk`
 
+// var unirest = require('unirest');
+
+// unirest.get("https://apidojo-kayak-v1.p.rapidapi.com/cars/poll?searchid=EtAmKGcDpR&currency=USD")
+// .header("X-RapidAPI-Key", "56f548c05amsh2e3029c2e3d52ecp15fec5jsndf6346348e18")
+// .end(function (result) {
+//   console.log(result.status, result.headers, result.body);
+// });
 $('#search-body').append(
     `
     <tr>
@@ -20,24 +27,24 @@ $('#search-body').append(
 )
 
 $.getJSON(locationURL, function(location_result){
-        var longitude = location_result.results[0].geometry.location.lng
-        var latitude = location_result.results[0].geometry.location.lat
-        console.log(longitude)
-        console.log(latitude)
-        const baseURL = `http://cm.ridiculous-inc.com/hotels/get?latitude=${latitude}&longitude=${longitude}&checkInDate=${checkInParam}&checkOutDate=${checkOutParam}&adults=${occupancyParam}&radius=10`
-        console.log(baseURL)
-        $.getJSON(baseURL, (hotel_result)=>{
-            hotel_result.data.forEach((hotel)=>{
-                var name = hotel.hotel.name
-                var price = hotel.offers[0].price.total
-                $('#flight-body').prepend(`
-                    <tr>
-                        <td>${name}</td>
-                        <td></td>
-                        <td>${price}</td>
-                    </tr>
-                `
-                )
-            })
+    var longitude = location_result.results[0].geometry.location.lng
+    var latitude = location_result.results[0].geometry.location.lat
+    console.log(longitude)
+    console.log(latitude)
+    const baseURL = `http://cm.ridiculous-inc.com/hotels/get?latitude=${latitude}&longitude=${longitude}&checkInDate=${checkInParam}&checkOutDate=${checkOutParam}&adults=${occupancyParam}&radius=20`
+    console.log(baseURL)
+    $.getJSON(baseURL, (hotel_result)=>{
+        hotel_result.data.forEach((hotel)=>{
+            var name = hotel.hotel.name
+            var price = hotel.offers[0].price.total
+            $('#flight-body').prepend(`
+                <tr>
+                    <td>${name}</td>
+                    <td></td>
+                    <td>${price}</td>
+                </tr>
+            `
+            )
         })
     })
+})
