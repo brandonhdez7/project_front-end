@@ -101,4 +101,3 @@ $.getJSON(searchURL,function(searchResults){
         
     })
 })
-
