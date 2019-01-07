@@ -38,6 +38,7 @@ $.getJSON(locationURL, function(location_result){
                 <tr>
                     <td>${name}</td>
                     <td>${price}</td>
+                    <td><input type="checkbox"></td>
                 </tr>
             `
             )
