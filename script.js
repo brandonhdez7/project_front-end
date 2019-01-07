@@ -1,3 +1,43 @@
+<<<<<<< HEAD
+=======
+// $('#service_link').click(function(){
+//   $( "#service_link" ).load( "index.html #service" );
+
+// })
+// const baseUrl = `http://cm.ridiculous-inc.com/?`
+
+
+$(function(){
+  var overlay = $('<div id="overlay"></div>');
+  overlay.show();
+  overlay.appendTo(document.body);
+  $('.popup').show();
+  $('.close').click(function(){
+  $('.popup').hide();
+  overlay.appendTo(document.body).remove();
+  return false;
+});
+  
+  
+   
+  
+$('.x').click(function(){
+  $('.popup').hide();
+      overlay.appendTo(document.body).remove();
+      return false;
+    });
+});
+
+
+
+
+
+
+window.onload=function(){
+  document.getElementById("flight_button").click();
+};
+
+>>>>>>> 904812e35b7439c9825b574d424a6b2ae62df336
 $('#flight_button').click(function(){
   console.log("some clicked on change html")
   $('#flight_button').css({
@@ -6,7 +46,7 @@ $('#flight_button').click(function(){
   $('#car_button,#hotel_button,#things_button').css({
     "background-color": "lightskyblue"
   });
-  $('.buttons_bundle').html(`<button name="test" value="fly" id="flight_bundle"><i class="fas fa-plane fa-1x"></i><br>Flight<br></button><input name="searchType" value="Flight" type="checkbox">
+  $('.buttons_bundle').html(`
   <button id="car_bundle" type="checkbox"><i class="fas fa-car fa-1x"></i><br>Car Rental<br></button><input name="searchType" value="CarRental" type="checkbox">
   <button id="hotel_budle" type="checkbox"><i class="fas fa-hotel fa-1x"></i><br>Hotel<br></button><input name="searchType" value="Hotel" type="checkbox">
   <button id="things_bundle" type="checkbox"><i class="fas fa-funnel-dollar fa-1x"></i><br>Things to do<br></button><input name="searchType" value="ThingsToDo" type="checkbox">
@@ -28,7 +68,6 @@ $('#car_button').click(function(){
     "background-color": "lightskyblue"
   });
   $('.buttons_bundle').html(`<button id="flight_bundle"><i class="fas fa-plane fa-1x"></i><br>Flight<br><input type="checkbox"></button>
-  <button id="car_bundle" type="checkbox"><i class="fas fa-car fa-1x"></i><br>Car Rental<br><input type="checkbox"></button>
   <button id="hotel_budle" type="checkbox"><i class="fas fa-hotel fa-1x"></i><br>Hotel<br><input type="checkbox"></button>
   <button id="things_bundle" type="checkbox"><i class="fas fa-funnel-dollar fa-1x"></i><br>Things to do<br><input type="checkbox"></button>
   `)
@@ -47,7 +86,6 @@ $('#hotel_button').click(function(){
   });
   $('.buttons_bundle').html(`<button id="flight_bundle"><i class="fas fa-plane fa-1x"></i><br>Flight<br><input type="checkbox"></button>
   <button id="car_bundle" type="checkbox"><i class="fas fa-car fa-1x"></i><br>Car Rental<br><input type="checkbox"></button>
-  <button id="hotel_budle" type="checkbox"><i class="fas fa-hotel fa-1x"></i><br>Hotel<br><input type="checkbox"></button>
   <button id="things_bundle" type="checkbox"><i class="fas fa-funnel-dollar fa-1x"></i><br>Things to do<br><input type="checkbox"></button>
   `)
   $('#label').html(`Destination<input name=location type="text" placeholder="Location"></input><br>
@@ -71,7 +109,6 @@ $('#things_button').click(function(){
   $('.buttons_bundle').html(`<button id="flight_bundle"><i class="fas fa-plane fa-1x"></i><br>Flight<br><input type="checkbox"></button>
   <button id="car_bundle" type="checkbox"><i class="fas fa-car fa-1x"></i><br>Car Rental<br><input type="checkbox"></button>
   <button id="hotel_budle" type="checkbox"><i class="fas fa-hotel fa-1x"></i><br>Hotel<br><input type="checkbox"></button>
-  <button id="things_bundle" type="checkbox"><i class="fas fa-funnel-dollar fa-1x"></i><br>Things to do<br><input type="checkbox"></button>
   `)
   $('#label').html(`Destination<input type="text" placeholder="Location"></input><br>
   Check in<input type="date"></input> Check out<input type="date"></input>`)
