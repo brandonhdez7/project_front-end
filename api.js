@@ -26,9 +26,14 @@ $('#search-body2').append(
     </tr>
     `
 )
+
+
+
 $.getJSON(searchURL,function(searchResults){
     console.log(searchResults);
     console.log(searchURL);
+
+   
    
     searchResults.data.forEach((flight)=>{
         var depart = flight.offerItems[0].services[0].segments[0].flightSegment.departure.at
@@ -82,6 +87,7 @@ $.getJSON(searchURL,function(searchResults){
                 <td>${airline2}</td>
                 <td>${newDepart2}</td>
                 <td>${newArrival2}</td>
+                <td><input type="checkbox"></td>
             </tr>
         `
         )
