@@ -53,8 +53,8 @@ $('#flight_button').click(function(){
   <button id="hotel_budle" type="checkbox"><i class="fas fa-hotel fa-1x"></i><br>Hotel<br></button><input name="searchType" value="Hotel" type="checkbox">
   <button id="things_bundle" type="checkbox"><i class="fas fa-funnel-dollar fa-1x"></i><br>Things to do<br></button><input name="searchType" value="ThingsToDo" type="checkbox">
   `)
-  $('#label').html(`Flying from<input type="text" placeholder="Location" name="origin"></input>Flying to <input type="text" placeholder="Location" name="destination"></input><br>
-  Departing<input type="date" name="departureDate"></input> Returning<input type="date" name="returnDate"></input> `);
+  $('#label').html(`Flying from<input id="pin" type="text" placeholder="Location" name="origin"></input>Flying to <input id="pin" type="text" placeholder="Location" name="destination"></input><br>
+  Departing<input id="date" type="date" name="departureDate"></input> Returning <input id="date" type="date" name="returnDate"></input> `);
   $('.label_button1').html(`
       <a href="results.html"><button type="submit">Search</button></a>
   `)
@@ -73,8 +73,8 @@ $('#car_button').click(function(){
   <button id="hotel_budle" type="checkbox"><i class="fas fa-hotel fa-1x"></i><br>Hotel<br><input type="checkbox"></button>
   <button id="things_bundle" type="checkbox"><i class="fas fa-funnel-dollar fa-1x"></i><br>Things to do<br><input type="checkbox"></button>
   `)
-  $('#label').html(`Picking up<input type="text" placeholder="Location"></input> Dropping off<input type="text" placeholder="Location"></input><br>
-  Pick up date<input type="date"></input> Drop of date<input type="date"></input>`);
+  $('#label').html(`<input id="pin" type="text" placeholder="Picking Up Location"></input> <input id="pin" type="text" placeholder="Dropping Off Location"></input><br>
+  <input id="date" type="date" placeholder="Pick up date"></input> <input id="date" type="date" placeholder="Drop of date"></input>`);
 })
 
 
@@ -90,8 +90,8 @@ $('#hotel_button').click(function(){
   <button id="car_bundle" type="checkbox"><i class="fas fa-car fa-1x"></i><br>Car Rental<br><input type="checkbox"></button>
   <button id="things_bundle" type="checkbox"><i class="fas fa-funnel-dollar fa-1x"></i><br>Things to do<br><input type="checkbox"></button>
   `)
-  $('#label').html(`Destination<input name=location type="text" placeholder="Location"></input> Occupancy<input name="adults" type="number" maxlength="4"></input><br>
-  Check in<input name="checkInDate" type="date"></input> Check out<input name="checkOutDate" type="date"></input>
+  $('#label').html(`<input id="pin" name=location type="text" placeholder="Destination"></input> <input id="people" name="adults" type="number" maxlength="4" placeholder="Occupancy"></input><br>
+  <input id="date" name="checkInDate" type="date" for="Check in"></input> <input id="date" name="checkOutDate" type="date" placeholder="Check out"></input>
   `);
   $('.label_button1').html(`
       <a href="hotel_results.html"><button value="hotel results" formaction="hotel_results.html" type="submit">Search</button></a>
@@ -112,8 +112,8 @@ $('#things_button').click(function(){
   <button id="car_bundle" type="checkbox"><i class="fas fa-car fa-1x"></i><br>Car Rental<br><input type="checkbox"></button>
   <button id="hotel_budle" type="checkbox"><i class="fas fa-hotel fa-1x"></i><br>Hotel<br><input type="checkbox"></button>
   `)
-  $('#label').html(`Destination<input type="text" placeholder="Location"></input><br>
-  Check in<input type="date"></input> Check out<input type="date"></input>`)
+  $('#label').html(`<input id="pin" type="text" placeholder="Destination"></input><br>
+  <input id="date" type="date" placeholder="Check in"></input> <input id="date" type="date" placeholder="Check out"></input>`)
 
 });
 var myVar;
