@@ -257,7 +257,9 @@ footer{
     width: 100%;
     justify-content: space-between;
 }
-
+.links a {
+    text-decoration: none;
+}
 .link1 h5{
     margin: 5px;
     text-decoration: none;
