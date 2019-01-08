@@ -112,9 +112,10 @@ $('#things_button').click(function(){
   <button id="car_bundle" type="checkbox"><i class="fas fa-car fa-1x"></i><br>Car Rental<br><input type="checkbox"></button>
   <button id="hotel_budle" type="checkbox"><i class="fas fa-hotel fa-1x"></i><br>Hotel<br><input type="checkbox"></button>
   `)
-  $('#label').html(`<input id="pin" type="text" placeholder="Destination"></input><br>
-  <input id="date" type="date" placeholder="Check in"></input> <input id="date" type="date" placeholder="Check out"></input>`)
-
+  $('#label').html(`<input id="pin" type="text" name="location" placeholder="Destination"></input><br>`)
+  $('.label_button1').html(`
+      <a href="things_result.html"><button value="things results" formaction="things_result.html" type="submit">Search</button></a>
+  `);
 });
 var myVar;
             
