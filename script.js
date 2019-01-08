@@ -85,8 +85,8 @@ $('#hotel_button').click(function(){
   <button id="car_bundle" type="checkbox"><i class="fas fa-car fa-1x"></i><br>Car Rental<br><input type="checkbox"></button>
   <button id="things_bundle" type="checkbox"><i class="fas fa-funnel-dollar fa-1x"></i><br>Things to do<br><input type="checkbox"></button>
   `)
-  $('#label').html(`Destination<input name=location type="text" placeholder="Location"></input><br>
-  Check in<input name="checkInDate" type="date"></input> Check out<input name="checkOutDate" type="date"></input><br> Nights<input type="number"></input> Occupancy<input name="adults" type="number" maxlength="4"></input>
+  $('#label').html(`Destination<input name=location type="text" placeholder="Location"></input> Occupancy<input name="adults" type="number" maxlength="4"></input><br>
+  Check in<input name="checkInDate" type="date"></input> Check out<input name="checkOutDate" type="date"></input>
   `);
   $('.label_button1').html(`
       <a href="hotel_results.html"><button value="hotel results" formaction="hotel_results.html" type="submit">Search</button></a>
@@ -114,7 +114,7 @@ $('#things_button').click(function(){
 var myVar;
             
 $(document).ready(function() {
-    myVar = setTimeout(showPage, 4500);
+    myVar = setTimeout(showPage, 6500);
 });
 
 function showPage() {
