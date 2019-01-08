@@ -464,12 +464,26 @@ footer{
     font-size: 20px;
 }
 #label input{
-    height: 60px;
-    font-size: 15px;
+    height: 50px;
+    font-size: 20px;
     margin: 25px;
     border: 0px;
     outline: none;
+    border-radius: 3%;
+    padding-left: 40px;
 }
+.fli{
+    position: relative;
+    display: inline-block;
+}
+.fli i{
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+
 .label_button button:hover{
     background-color: #23a5f6;
 }
@@ -498,10 +512,11 @@ footer{
 
 /* service bundle */
 
-#date::before{
+
+/* #date::before{
     font-family: "Font Awesome 5 Free";
     content: "\f073";
-    padding: 5px; 
+    padding: 5px;
 }
 
 #pin::before{
@@ -519,7 +534,7 @@ footer{
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
-}
+} */
 
 #bundle{
     height: 600px;
@@ -955,6 +970,9 @@ footer{
 
 
 @media only screen and (max-width: 660px) {
+
+
+
     .popup{
         width: 100%;
         margin: 0 auto;
@@ -1142,6 +1160,18 @@ footer{
         /* margin: 10px; */
         
     }
+
+    .fli{
+        position: relative;
+        display: inline-block;
+    }
+    .fli i{
+        position: absolute;
+        left: 30px;
+        top: 50%;
+        transform: translateY(-50%)
+    }
+
     .label_button button:hover{
         background-color: #23a5f6;
     }
