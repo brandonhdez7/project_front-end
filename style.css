@@ -57,14 +57,14 @@ body{
     display: none;
 }
 /* popup */
-    .popup{
+.popup{
     width: 100%;
     margin: 0 auto;
     display: none;
     position: fixed;
     z-index: 3;
-    }
-    .popup_box{
+}
+.popup_box{
     opacity: 0.9;
     display: flex;
     flex-direction: column;
@@ -78,36 +78,38 @@ body{
     padding: 15px 35px;
     border-radius: 5px;
     box-shadow: 0 2px 5px #000;
-    }
-    .popup_box h1{
-        font-size: 40px;
-        margin-bottom: 0px;
-    }
-    .popup_box p{
-        font-size: 15px;
-        margin-left: 150px;
-        margin-right: 150px;
-        text-align: center;
-    }
+}
+.popup_box h1{
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+.popup_box p{
+    font-size: 15px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+}
 
-    .popup_box button{
-        padding: 10px 100px 10px 100px;
-        font-size: 24px;
-        font-weight: 600;
-    }
+.popup_box button{
+    padding: 8px 80px 8px 80px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 4px;
+}
 
-    .popup_box input{
-        font-size: 24px;
-        height: 40px;
-        width: 321px;
-        margin-bottom: 20px;
-    }
-    .popup_box a{
+.popup_box input{
+    font-size: 20px;
+    height: 30px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.popup_box a{
     color: #d91900;
     font-weight: bold;
     text-decoration: none;
     margin-left: 590px;
-    }
+}
 
 
 
