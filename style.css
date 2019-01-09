@@ -6,6 +6,16 @@ body{
     overflow-x: hidden;
     margin: 0px;
 }
+
+.privacy h1{
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 300px;
+}
+.privacy button{
+   margin-left: 900px;
+}
 /* loader  */
 #loader {
     position: absolute;
