@@ -31,7 +31,8 @@ $('#search-body').append(
                 var city = hotel.hotel.address.cityName
                 var state = hotel.hotel.address.stateCode
                 var postalCode = hotel.hotel.address.postalCode
-                var phone = hotel.hotel.contact.phone
+                var country = hotel.hotel.address.countryCode
+                // var phone = hotel.hotel.contact.phone
                 $('#flight-body').append(`
                     <tr>
                     <td id="row">${name}<button id="details${i}" class="details">details</button></td>
@@ -56,7 +57,7 @@ $('#search-body').append(
                     <table id="details-address">
                         <thead>
                             <tr>
-                                <th>${address}<br>${city}, ${state} ${postalCode}<br>${phone}</th>
+                                <th>${address}<br>${city}, ${state} ${postalCode}<br> ${country}</th>
                             </tr>
                         </thead>
                     </table>
