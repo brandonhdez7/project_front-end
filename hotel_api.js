@@ -34,11 +34,11 @@ $('#search-body').append(
                 var country = hotel.hotel.address.countryCode
                 // var phone = hotel.hotel.contact.phone
                 $('#flight-body').append(`
-                <tr>
-                <td id="row">${name}<button id="details${i}" class="details">details</button></td>
-                <td>${price}</td>
-                <td><input type="checkbox"></td>
-                </tr>
+                    <tr>
+                    <td id="row">${name}<button id="details${i}" class="details">details</button></td>
+                    <td>${price}</td>
+                    <td><input type="checkbox"></td>
+                    </tr>
                 `
                 )
                 // Get the modal
