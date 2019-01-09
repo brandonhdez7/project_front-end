@@ -75,7 +75,11 @@ $('#car_button').click(function(){
   // `)
   $('#label').html(`<div class="fli"><input id="pin" type="text" placeholder="Picking Up Location"><span>Location</span></input><i class="fas fa-map-marker-alt"></i></div> <div class="fli"><input id="pin" type="text" placeholder="Dropping Off Location"><span>Location</span></input><i class="fas fa-map-marker-alt"></i></div><br>
   <div class="fli"><input placeholder="Pick up date" id="date" type="date"><span>Pick Up</span></input><i class="fas fa-calendar-alt"></i></div> <div class="fli"><input id="date" type="date" placeholder="Drop of date"><span>Drop off</span></input><i class="fas fa-calendar-alt"></i></div> `);
+  $('.label_button1').html(`
+      <a href="car_result.html"><button value="car results" formaction="car_result.html" type="submit">Search</button></a>
+  `);
 })
+
 
 
 $('#hotel_button').click(function(){
@@ -114,7 +118,9 @@ $('#things_button').click(function(){
   // `)
   $('#label').html(`<div class="fli"><input id="pin" type="text" placeholder="Destination"><span>Location</span></input><i class="fas fa-map-marker-alt"></i></div><br>
   <div class="fli"><input id="date" type="date" placeholder="Check in"><span>Check In</span></input><i class="fas fa-calendar-alt"></i></div> <div class="fli"><input id="date" type="date" placeholder="Check out"><span>Check Out</span></input><i class="fas fa-calendar-alt"></i></div>`)
-
+  $('.label_button1').html(`
+      <a href="things_result.html"><button value="things results" formaction="things_result.html" type="submit">Search</button></a>
+  `);
 });
 var myVar;
             
