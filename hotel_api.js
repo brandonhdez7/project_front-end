@@ -31,13 +31,13 @@ $('#search-body').append(
                 var city = hotel.hotel.address.cityName
                 var state = hotel.hotel.address.stateCode
                 var postalCode = hotel.hotel.address.postalCode
-                // var phone = hotel.hotel.contact.phone
+                var phone = hotel.hotel.contact.phone
                 $('#flight-body').append(`
-                <tr>
-                <td id="row">${name}<button id="details${i}" class="details">details</button></td>
-                <td>${price}</td>
-                <td><input type="checkbox"></td>
-                </tr>
+                    <tr>
+                    <td id="row">${name}<button id="details${i}" class="details">details</button></td>
+                    <td>${price}</td>
+                    <td><input type="checkbox"></td>
+                    </tr>
                 `
                 )
                 // Get the modal
@@ -56,7 +56,7 @@ $('#search-body').append(
                     <table id="details-address">
                         <thead>
                             <tr>
-                                <th>${address}<br>${city}, ${state} ${postalCode}</th>
+                                <th>${address}<br>${city}, ${state} ${postalCode}<br>${phone}</th>
                             </tr>
                         </thead>
                     </table>
