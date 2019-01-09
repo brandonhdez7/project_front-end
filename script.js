@@ -108,16 +108,6 @@ $('#things_button').click(function(){
   $('#car_button,#hotel_button,#flight_button').css({
     "background-color": "lightskyblue"
   });
-<<<<<<< HEAD
-  $('.buttons_bundle').html(`<button id="flight_bundle"><i class="fas fa-plane fa-1x"></i><br>Flight<br><input type="checkbox"></button>
-  <button id="car_bundle" type="checkbox"><i class="fas fa-car fa-1x"></i><br>Car Rental<br><input type="checkbox"></button>
-  <button id="hotel_budle" type="checkbox"><i class="fas fa-hotel fa-1x"></i><br>Hotel<br><input type="checkbox"></button>
-  `)
-  $('#label').html(`<input id="pin" type="text" name="location" placeholder="Destination"></input><br>`)
-  $('.label_button1').html(`
-      <a href="things_result.html"><button value="things results" formaction="things_result.html" type="submit">Search</button></a>
-  `);
-=======
   // $('.buttons_bundle').html(`<button id="flight_bundle"><i class="fas fa-plane fa-1x"></i><br>Flight<br><input type="checkbox"></button>
   // <button id="car_bundle" type="checkbox"><i class="fas fa-car fa-1x"></i><br>Car Rental<br><input type="checkbox"></button>
   // <button id="hotel_budle" type="checkbox"><i class="fas fa-hotel fa-1x"></i><br>Hotel<br><input type="checkbox"></button>
@@ -125,7 +115,6 @@ $('#things_button').click(function(){
   $('#label').html(`<div class="fli"><input id="pin" type="text" placeholder="Destination"><span>Location</span></input><i class="fas fa-map-marker-alt"></i></div><br>
   <div class="fli"><input id="date" type="date" placeholder="Check in"><span>Check In</span></input><i class="fas fa-calendar-alt"></i></div> <div class="fli"><input id="date" type="date" placeholder="Check out"><span>Check Out</span></input><i class="fas fa-calendar-alt"></i></div>`)
 
->>>>>>> master
 });
 var myVar;
             
