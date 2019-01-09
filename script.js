@@ -53,11 +53,19 @@ $('#flight_button').click(function(){
   // <button id="hotel_budle" type="checkbox"><i class="fas fa-hotel fa-1x"></i><br>Hotel<br></button><input name="searchType" value="Hotel" type="checkbox">
   // <button id="things_bundle" type="checkbox"><i class="fas fa-funnel-dollar fa-1x"></i><br>Things to do<br></button><input name="searchType" value="ThingsToDo" type="checkbox">
   // `)
-  $('#label').html(`<div class="fli"><input id="pin" type="text" placeholder="Flying from" name="origin"><span>Location</span></input><i class="fas fa-map-marker-alt"></i></div>  <div class="fli"><input id="pin" type="text" placeholder="Flying to" name="destination"><span>Location</span></input><i class="fas fa-map-marker-alt"></i></div><br>
+  $('#label').html(`<div class="fli"><input id="pin" type="text" placeholder="Flying from" name="origin"><span>Location</span></input><i class="fas fa-map-marker-alt"></i></div>  <div class="fli"><input id="pin2" type="text" placeholder="Flying to" name="destination"><span>Location</span></input><i class="fas fa-map-marker-alt"></i></div><br>
   <div class="fli"><input id="date" type="date" name="departureDate"><span>Departure</span></input><i class="fas fa-calendar-alt"></i></div> <div class="fli"><input id="date" type="date" name="returnDate"><span>Returning</span></input><i class="fas fa-calendar-alt"></i></div> `);
   $('.label_button1').html(`
       <a href="results.html"><button type="submit">Search</button></a>
   `)
+  $('#pin, #pin2').autocomplete({
+    source: function( request, response ) {
+      var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
+      response( $.grep( airports, function( item ){
+          return matcher.test( item );
+      }) );
+  }
+  })
 
 })
 
