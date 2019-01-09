@@ -48,13 +48,13 @@ $('#flight_button').click(function(){
   $('#car_button,#hotel_button,#things_button').css({
     "background-color": "lightskyblue"
   });
-  $('.buttons_bundle').html(`
-  <button id="car_bundle" type="checkbox"><i class="fas fa-car fa-1x"></i><br>Car Rental<br></button><input name="searchType" value="CarRental" type="checkbox">
-  <button id="hotel_budle" type="checkbox"><i class="fas fa-hotel fa-1x"></i><br>Hotel<br></button><input name="searchType" value="Hotel" type="checkbox">
-  <button id="things_bundle" type="checkbox"><i class="fas fa-funnel-dollar fa-1x"></i><br>Things to do<br></button><input name="searchType" value="ThingsToDo" type="checkbox">
-  `)
-  $('#label').html(`Flying from<input id="pin" type="text" placeholder="Location" name="origin"></input>Flying to <input id="pin" type="text" placeholder="Location" name="destination"></input><br>
-  Departing<input id="date" type="date" name="departureDate"></input> Returning <input id="date" type="date" name="returnDate"></input> `);
+  // $('.buttons_bundle').html(`
+  // <button id="car_bundle" type="checkbox"><i class="fas fa-car fa-1x"></i><br>Car Rental<br></button><input name="searchType" value="CarRental" type="checkbox">
+  // <button id="hotel_budle" type="checkbox"><i class="fas fa-hotel fa-1x"></i><br>Hotel<br></button><input name="searchType" value="Hotel" type="checkbox">
+  // <button id="things_bundle" type="checkbox"><i class="fas fa-funnel-dollar fa-1x"></i><br>Things to do<br></button><input name="searchType" value="ThingsToDo" type="checkbox">
+  // `)
+  $('#label').html(`<div class="fli"><input id="pin" type="text" placeholder="Flying from" name="origin"><span>Location</span></input><i class="fas fa-map-marker-alt"></i></div>  <div class="fli"><input id="pin" type="text" placeholder="Flying to" name="destination"><span>Location</span></input><i class="fas fa-map-marker-alt"></i></div><br>
+  <div class="fli"><input id="date" type="date" name="departureDate"><span>Departure</span></input><i class="fas fa-calendar-alt"></i></div> <div class="fli"><input id="date" type="date" name="returnDate"><span>Returning</span></input><i class="fas fa-calendar-alt"></i></div> `);
   $('.label_button1').html(`
       <a href="results.html"><button type="submit">Search</button></a>
   `)
@@ -69,12 +69,12 @@ $('#car_button').click(function(){
   $('#flight_button,#hotel_button,#things_button').css({
     "background-color": "lightskyblue"
   });
-  $('.buttons_bundle').html(`<button id="flight_bundle"><i class="fas fa-plane fa-1x"></i><br>Flight<br><input type="checkbox"></button>
-  <button id="hotel_budle" type="checkbox"><i class="fas fa-hotel fa-1x"></i><br>Hotel<br><input type="checkbox"></button>
-  <button id="things_bundle" type="checkbox"><i class="fas fa-funnel-dollar fa-1x"></i><br>Things to do<br><input type="checkbox"></button>
-  `)
-  $('#label').html(`<input id="pin" type="text" placeholder="Picking Up Location"></input> <input id="pin" type="text" placeholder="Dropping Off Location"></input><br>
-  <input id="date" type="date" placeholder="Pick up date"></input> <input id="date" type="date" placeholder="Drop of date"></input>`);
+  // $('.buttons_bundle').html(`<button id="flight_bundle"><i class="fas fa-plane fa-1x"></i><br>Flight<br><input type="checkbox"></button>
+  // <button id="hotel_budle" type="checkbox"><i class="fas fa-hotel fa-1x"></i><br>Hotel<br><input type="checkbox"></button>
+  // <button id="things_bundle" type="checkbox"><i class="fas fa-funnel-dollar fa-1x"></i><br>Things to do<br><input type="checkbox"></button>
+  // `)
+  $('#label').html(`<div class="fli"><input id="pin" type="text" placeholder="Picking Up Location"><span>Location</span></input><i class="fas fa-map-marker-alt"></i></div> <div class="fli"><input id="pin" type="text" placeholder="Dropping Off Location"><span>Location</span></input><i class="fas fa-map-marker-alt"></i></div><br>
+  <div class="fli"><input placeholder="Pick up date" id="date" type="date"><span>Pick Up</span></input><i class="fas fa-calendar-alt"></i></div> <div class="fli"><input id="date" type="date" placeholder="Drop of date"><span>Drop off</span></input><i class="fas fa-calendar-alt"></i></div> `);
 })
 
 
@@ -86,12 +86,12 @@ $('#hotel_button').click(function(){
   $('#car_button,#flight_button,#things_button').css({
     "background-color": "lightskyblue"
   });
-  $('.buttons_bundle').html(`<button id="flight_bundle"><i class="fas fa-plane fa-1x"></i><br>Flight<br><input type="checkbox"></button>
-  <button id="car_bundle" type="checkbox"><i class="fas fa-car fa-1x"></i><br>Car Rental<br><input type="checkbox"></button>
-  <button id="things_bundle" type="checkbox"><i class="fas fa-funnel-dollar fa-1x"></i><br>Things to do<br><input type="checkbox"></button>
-  `)
-  $('#label').html(`<input id="pin" name=location type="text" placeholder="Destination"></input> <input id="people" name="adults" type="number" maxlength="4" placeholder="Occupancy"></input><br>
-  <input id="date" name="checkInDate" type="date" for="Check in"></input> <input id="date" name="checkOutDate" type="date" placeholder="Check out"></input>
+  // $('.buttons_bundle').html(`<button id="flight_bundle"><i class="fas fa-plane fa-1x"></i><br>Flight<br><input type="checkbox"></button>
+  // <button id="car_bundle" type="checkbox"><i class="fas fa-car fa-1x"></i><br>Car Rental<br><input type="checkbox"></button>
+  // <button id="things_bundle" type="checkbox"><i class="fas fa-funnel-dollar fa-1x"></i><br>Things to do<br><input type="checkbox"></button>
+  // `)
+  $('#label').html(`<div class="fli"><input id="pin" name=location type="text" placeholder="Destination"><span>Location</span></input><i class="fas fa-map-marker-alt"></i></div> <div class="fli"><input id="people" name="adults" type="number" maxlength="4" placeholder="Occupancy"><span>Occupancy</span></input><i class="fas fa-user-alt"></i></div><br>
+  <div class="fli"><input id="date" name="checkInDate" type="date" placeholder="Check in"><span>Check In</span></input><i class="fas fa-calendar-alt"></i></div> <div class="fli"><input id="date" name="checkOutDate" type="date" placeholder="Check out"><span>Check Out</span></input><i class="fas fa-calendar-alt"></i></div>
   `);
   $('.label_button1').html(`
       <a href="hotel_results.html"><button value="hotel results" formaction="hotel_results.html" type="submit">Search</button></a>
@@ -108,6 +108,7 @@ $('#things_button').click(function(){
   $('#car_button,#hotel_button,#flight_button').css({
     "background-color": "lightskyblue"
   });
+<<<<<<< HEAD
   $('.buttons_bundle').html(`<button id="flight_bundle"><i class="fas fa-plane fa-1x"></i><br>Flight<br><input type="checkbox"></button>
   <button id="car_bundle" type="checkbox"><i class="fas fa-car fa-1x"></i><br>Car Rental<br><input type="checkbox"></button>
   <button id="hotel_budle" type="checkbox"><i class="fas fa-hotel fa-1x"></i><br>Hotel<br><input type="checkbox"></button>
@@ -116,6 +117,15 @@ $('#things_button').click(function(){
   $('.label_button1').html(`
       <a href="things_result.html"><button value="things results" formaction="things_result.html" type="submit">Search</button></a>
   `);
+=======
+  // $('.buttons_bundle').html(`<button id="flight_bundle"><i class="fas fa-plane fa-1x"></i><br>Flight<br><input type="checkbox"></button>
+  // <button id="car_bundle" type="checkbox"><i class="fas fa-car fa-1x"></i><br>Car Rental<br><input type="checkbox"></button>
+  // <button id="hotel_budle" type="checkbox"><i class="fas fa-hotel fa-1x"></i><br>Hotel<br><input type="checkbox"></button>
+  // `)
+  $('#label').html(`<div class="fli"><input id="pin" type="text" placeholder="Destination"><span>Location</span></input><i class="fas fa-map-marker-alt"></i></div><br>
+  <div class="fli"><input id="date" type="date" placeholder="Check in"><span>Check In</span></input><i class="fas fa-calendar-alt"></i></div> <div class="fli"><input id="date" type="date" placeholder="Check out"><span>Check Out</span></input><i class="fas fa-calendar-alt"></i></div>`)
+
+>>>>>>> master
 });
 var myVar;
             

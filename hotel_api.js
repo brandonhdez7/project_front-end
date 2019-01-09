@@ -10,13 +10,6 @@ location1 = "%20" + location1
 location1 = location2 + location1
 var locationURL = `https://maps.googleapis.com/maps/api/geocode/json?address=${location1}&key=AIzaSyB1TSCiV6L80P0PdYJ0QuYEdLKBpr-AgUk`
 
-// var unirest = require('unirest');
-
-// unirest.get("https://apidojo-kayak-v1.p.rapidapi.com/cars/poll?searchid=EtAmKGcDpR&currency=USD")
-// .header("X-RapidAPI-Key", "56f548c05amsh2e3029c2e3d52ecp15fec5jsndf6346348e18")
-// .end(function (result) {
-//   console.log(result.status, result.headers, result.body);
-// });
 $('#search-body').append(
     `
     <tr>

@@ -464,12 +464,34 @@ footer{
     font-size: 20px;
 }
 #label input{
-    height: 60px;
+    padding-top: 15px;
+    height: 50px;
     font-size: 15px;
     margin: 25px;
     border: 0px;
     outline: none;
+    border-radius: 3%;
+    padding-left: 40px;
 }
+.fli{
+    position: relative;
+    display: inline-block;
+}
+.fli i{
+    position: absolute;
+    left: 40px;
+    top: 55px;
+    
+}
+span{
+    position: absolute;
+    font-size: 12px;
+    left: 40px;
+    top: 32px;
+    color: black
+}
+
+
 .label_button button:hover{
     background-color: #23a5f6;
 }
@@ -498,10 +520,11 @@ footer{
 
 /* service bundle */
 
-#date::before{
+
+/* #date::before{
     font-family: "Font Awesome 5 Free";
     content: "\f073";
-    padding: 5px; 
+    padding: 5px;
 }
 
 #pin::before{
@@ -519,7 +542,7 @@ footer{
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
-}
+} */
 
 #bundle{
     height: 600px;
@@ -888,8 +911,9 @@ footer{
         margin-left: 10px;
     }
     #label input{
+        padding-top: 15px;
         width: 160px;
-        height: 20px;
+        height: 25px;
         font-size: 14px;
         margin: 25px;
         border: 0px;
@@ -901,6 +925,27 @@ footer{
         /* margin: 10px; */
     
     }
+    
+    .fli{
+        position: relative;
+        display: inline-block;
+    }
+    .fli i{
+        position: absolute;
+        left: 40px;
+        top: 45px;
+        
+    }
+    span{
+        position: absolute;
+        font-size: 10px;
+        left: 40px;
+        top: 28px;
+        color: black
+    }
+
+
+
     #contact {
         position: relative;
         left: 40%;
@@ -931,9 +976,14 @@ footer{
     }
     
     .label_button{
-        margin-top: 0px;
-        margin-left: 110px;
+        margin-top: 45px;
+        margin-left:20px;
     }
+    .label_button1{
+        margin-top: 45px;
+        margin-left:20px;
+    }
+
     .label_button button{
         padding: 10px 15px 10px 15px;
         background-color: lightskyblue;
@@ -955,6 +1005,9 @@ footer{
 
 
 @media only screen and (max-width: 660px) {
+
+
+
     .popup{
         width: 100%;
         margin: 0 auto;
@@ -1128,6 +1181,7 @@ footer{
         margin-left: 10px;
     }
     #label input{
+        padding-top: 13px;
         width: 150px;
         height: 20px;
         font-size: 14px;
@@ -1142,6 +1196,25 @@ footer{
         /* margin: 10px; */
         
     }
+
+    .fli{
+        position: relative;
+        display: inline-block;
+    }
+    .fli i{
+        position: absolute;
+        left: 25px;
+        top: 26px;
+        
+    }
+    span{
+        position: absolute;
+        font-size: 10px;
+        left: 45px;
+        top: 10px;
+        color: black
+    }
+
     .label_button button:hover{
         background-color: #23a5f6;
     }
@@ -1295,6 +1368,9 @@ footer{
     .label_button1{
         text-align: center;
         margin: 60px 0px 20px 0px;
+    }
+    .label_button{
+        margin-left:100px;
     }
     
     .label_button1 button{
