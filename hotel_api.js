@@ -24,22 +24,28 @@ $('#search-body').append(
         const baseURL = `http://cm.ridiculous-inc.com/hotels/get?latitude=${latitude}&longitude=${longitude}&checkInDate=${checkInParam}&checkOutDate=${checkOutParam}&adults=${occupancyParam}&radius=20`
         console.log(baseURL)
         $.getJSON(baseURL, (hotel_result)=>{
-            hotel_result.data.forEach((hotel)=>{
+            hotel_result.data.forEach((hotel, i)=>{
                 var name = hotel.hotel.name
                 var price = hotel.offers[0].price.total
-                $('#flight-body').prepend(`
-                <tr>
-                <td id="row">${name}<button id="details">details</button></td>
-                <td>${price}</td>
-                <td><input type="checkbox"></td>
-                </tr>
+                var address = hotel.hotel.address.lines[0]
+                var city = hotel.hotel.address.cityName
+                var state = hotel.hotel.address.stateCode
+                var postalCode = hotel.hotel.address.postalCode
+                var country = hotel.hotel.address.countryCode
+                // var phone = hotel.hotel.contact.phone
+                $('#flight-body').append(`
+                    <tr>
+                    <td id="row">${name}<button id="details${i}" class="details">details</button></td>
+                    <td>${price}</td>
+                    <td><input type="checkbox"></td>
+                    </tr>
                 `
                 )
                 // Get the modal
                 var modal = document.getElementById('myModal');
                 
                 // Get the button that opens the modal
-                var btn = document.getElementById("details");
+                var btn = document.getElementById("details" + i);
                 
                 // Get the <span> element that closes the modal
                 var span = document.getElementsByClassName("close")[0];
@@ -47,6 +53,15 @@ $('#search-body').append(
                 // When the user clicks the button, open the modal 
                 btn.onclick = function() {
                   modal.style.display = "block";
+                  $('.modal-text').html(`
+                    <table id="details-address">
+                        <thead>
+                            <tr>
+                                <th>${address}<br>${city}, ${state} ${postalCode}<br> ${country}</th>
+                            </tr>
+                        </thead>
+                    </table>
+                  `)
                 }
                 
                 // When the user clicks on <span> (x), close the modal
@@ -60,11 +75,6 @@ $('#search-body').append(
                     modal.style.display = "none";
                   }
                 }
-                // $('.modal-text').html(`
-                //     <ul>
-                //         <li>${name}</li>
-                //     </ul>
-                // `)
             })
         })
     })
