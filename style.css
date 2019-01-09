@@ -1363,6 +1363,11 @@ span{
         width: 80%;
 
     }
+
+    .buttons{
+        width: 300px;
+        margin-left: 48px;
+    }
    
     .buttons_bundle button{
         padding: 7px 10px 7px 10px;
