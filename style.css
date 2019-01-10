@@ -447,7 +447,6 @@ footer{
     background-repeat: no-repeat;
 }
 .transparent_box{
-    /* margin-left: 50px; */
     background-color:  rgb(0, 0, 0,0.5);
     height: 500px;
     width: 1000px;
@@ -484,6 +483,7 @@ footer{
     outline: none;
     border-radius: 3%;
     padding-left: 40px;
+    -webkit-appearance: none;
 }
 .fli{
     position: relative;
@@ -908,6 +908,7 @@ span{
         /* display: flex;
         flex-direction: row; */
         padding: 10px 15px 10px 15px;
+        margin-left: 10%;
         background-color: lightskyblue;
         border-radius: 5%;
         border: 0px;
@@ -1093,6 +1094,9 @@ span{
         display: flex;
         flex-direction: column;
     }
+    .testimonials {
+        width: 63%;
+    }
     
     main{
         display: flex;
@@ -1126,13 +1130,12 @@ span{
     
     nav{
         width: 100%;
-        
     }
     
     header{
         background-size: 100% 300px;
         height: 300px;
-        margin: 80px 10px 0px 10px;
+        margin: 80px -14px 0px 10px;
     }
     
     header h1{
@@ -1156,6 +1159,8 @@ span{
         outline: none;
     }
     #service{
+        /* margin-left: 10px; */
+        width: 105%;
         height: max-content;
         padding-top: 100px;
         background-size: 100% 500px;
@@ -1163,7 +1168,7 @@ span{
     }
     .transparent_box{
         margin-top: -85px;
-        margin-left: 40px;
+        margin-left: 50px;
         margin-bottom: 20px;
         background-color:  rgb(0, 0, 0,0.5);
         height: 400px;
@@ -1175,6 +1180,7 @@ span{
         /* flex-direction: row; */
         /* flex-wrap: wrap; */
         padding: 0px 0px 0px 0px;
+        margin-left: 10%;
         background-color: lightskyblue;
         border-radius: 5%;
         border: 0px;
@@ -1250,13 +1256,13 @@ span{
     
     #flight_button {
         width: 100px;
-        margin-left: -26px;
+        margin-left: 15%;
         padding: 0px 0px 0px 0px;
     }
     #hotel_button {
         margin-top: 3px;
         margin-right: 25px;
-        margin-left: -25px;
+        margin-left: 9%;
         width: 100px;
         padding: 0px 0px 0px 0px;
     }
@@ -1267,8 +1273,9 @@ span{
         padding: 0px 0px 0px 0px;
     }
     #car_button {
+        margin-left: 0px;
         width: 100px;
-        margin-right: 25px;
+        margin-right: 50px;
         padding: 0px 0px 0px 0px;
     }
    
@@ -1419,6 +1426,9 @@ span{
     #contact-submit {
         position: relative;
         left: 45px;
+    }
+    footer{
+        width:105%;
     }
 }
 #info {
