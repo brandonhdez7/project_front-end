@@ -1093,6 +1093,9 @@ span{
         display: flex;
         flex-direction: column;
     }
+    .testimonials {
+        width: 63%;
+    }
     
     main{
         display: flex;
@@ -1126,13 +1129,12 @@ span{
     
     nav{
         width: 100%;
-        
     }
     
     header{
         background-size: 100% 300px;
         height: 300px;
-        margin: 80px 10px 0px 10px;
+        margin: 80px -10px 0px 10px;
     }
     
     header h1{
@@ -1156,6 +1158,8 @@ span{
         outline: none;
     }
     #service{
+        /* margin-left: 10px; */
+        width: 104%;
         height: max-content;
         padding-top: 100px;
         background-size: 100% 500px;
@@ -1163,7 +1167,7 @@ span{
     }
     .transparent_box{
         margin-top: -85px;
-        margin-left: 40px;
+        margin-left: 50px;
         margin-bottom: 20px;
         background-color:  rgb(0, 0, 0,0.5);
         height: 400px;
@@ -1174,14 +1178,14 @@ span{
         /* display: flex; */
         /* flex-direction: row; */
         /* flex-wrap: wrap; */
-        /* padding: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
         margin-left: 10%;
         background-color: lightskyblue;
         border-radius: 5%;
         border: 0px;
         font-size: 14px;
         font-weight: 600;
-        outline: none; */
+        outline: none;
     }
     .buttons button:hover{
         background-color: #23a5f6;
@@ -1251,7 +1255,7 @@ span{
     
     #flight_button {
         width: 100px;
-        margin-left: 17%;
+        margin-left: 15%;
         padding: 0px 0px 0px 0px;
     }
     #hotel_button {
