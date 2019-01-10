@@ -1426,6 +1426,9 @@ span{
         position: relative;
         left: 45px;
     }
+    footer{
+        width: 104%;
+    }
 }
 #info {
     padding-top: 100px;
