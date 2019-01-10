@@ -907,6 +907,7 @@ span{
         /* display: flex;
         flex-direction: row; */
         padding: 10px 15px 10px 15px;
+        margin-left: 10%;
         background-color: lightskyblue;
         border-radius: 5%;
         border: 0px;
@@ -1173,13 +1174,14 @@ span{
         /* display: flex; */
         /* flex-direction: row; */
         /* flex-wrap: wrap; */
-        padding: 0px 0px 0px 0px;
+        /* padding: 0px 0px 0px 0px;
+        margin-left: 10%;
         background-color: lightskyblue;
         border-radius: 5%;
         border: 0px;
         font-size: 14px;
         font-weight: 600;
-        outline: none;
+        outline: none; */
     }
     .buttons button:hover{
         background-color: #23a5f6;
@@ -1249,13 +1251,13 @@ span{
     
     #flight_button {
         width: 100px;
-        margin-left: -26px;
+        margin-left: 17%;
         padding: 0px 0px 0px 0px;
     }
     #hotel_button {
         margin-top: 3px;
         margin-right: 25px;
-        margin-left: -25px;
+        margin-left: 9%;
         width: 100px;
         padding: 0px 0px 0px 0px;
     }
@@ -1266,8 +1268,9 @@ span{
         padding: 0px 0px 0px 0px;
     }
     #car_button {
+        margin-left: 0px;
         width: 100px;
-        margin-right: 25px;
+        margin-right: 50px;
         padding: 0px 0px 0px 0px;
     }
    
