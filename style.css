@@ -483,6 +483,7 @@ footer{
     outline: none;
     border-radius: 3%;
     padding-left: 40px;
+    -webkit-appearance: none;
 }
 .fli{
     position: relative;
